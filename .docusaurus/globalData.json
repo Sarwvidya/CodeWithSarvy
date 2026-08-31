@@ -1,0 +1,68 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "core-java/jvm-memory-model",
+              "path": "/docs/core-java/jvm-memory-model",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "core-java/oops-concepts",
+              "path": "/docs/core-java/oops-concepts",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "devops/git-workflows",
+              "path": "/docs/devops/git-workflows",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dsa/time-space-complexity",
+              "path": "/docs/dsa/time-space-complexity",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/modern-javascript",
+              "path": "/docs/react/modern-javascript",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "spring-boot/spring-core-ioc",
+              "path": "/docs/spring-boot/spring-core-ioc",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "system-design/sql-indexing",
+              "path": "/docs/system-design/sql-indexing",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

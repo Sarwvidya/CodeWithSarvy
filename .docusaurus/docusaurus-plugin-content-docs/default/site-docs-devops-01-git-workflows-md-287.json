@@ -1,0 +1,27 @@
+{
+  "id": "devops/git-workflows",
+  "title": "Git Workflows & Rebasing",
+  "description": "Git is a distributed version control system. Mastering branching strategies and interactive rebasing produces a clean, linear commit history.",
+  "source": "@site/docs/devops/01-git-workflows.md",
+  "sourceDirName": "devops",
+  "slug": "/devops/git-workflows",
+  "permalink": "/docs/devops/git-workflows",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Git Workflows & Rebasing",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "JVM Internals & Memory Model",
+    "permalink": "/docs/core-java/jvm-memory-model"
+  },
+  "next": {
+    "title": "Time & Space Complexity (Big-O)",
+    "permalink": "/docs/dsa/time-space-complexity"
+  }
+}
