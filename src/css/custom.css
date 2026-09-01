@@ -696,6 +696,23 @@ body,
   margin-left: 6px;
 }
 
+.back-empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 24px 12px;
+  background: var(--bg-subtle);
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+.back-empty-text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
 /* Empty search state */
 .empty-results-box {
   text-align: center;

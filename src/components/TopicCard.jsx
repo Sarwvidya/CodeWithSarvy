@@ -22,6 +22,7 @@ export function TopicCard({ topic }) {
   };
 
   const chapters = topic.chapters || [];
+  const hasChapters = chapters.length > 0;
 
   return (
     <div 
@@ -43,8 +44,8 @@ export function TopicCard({ topic }) {
             <p className="topic-card-description">{topic.description}</p>
             
             <div className="flip-indicator">
-              <span>Hover to view chapters</span>
-              <span className="flip-symbol">↻</span>
+              <span>{hasChapters ? 'Hover to view chapters' : 'Coming soon'}</span>
+              {hasChapters && <span className="flip-symbol">↻</span>}
             </div>
           </div>
         </div>
@@ -59,26 +60,32 @@ export function TopicCard({ topic }) {
               style={{ color: topic.color || '#38bdf8', borderColor: `${topic.color || '#38bdf8'}50` }}
               onClick={(e) => e.stopPropagation()}
             >
-              {chapters.length} Chapters →
+              {hasChapters ? `${chapters.length} ${chapters.length === 1 ? 'Chapter' : 'Chapters'} →` : 'Docs →'}
             </a>
           </div>
 
-          <ul className="back-chapters-list">
-            {chapters.map((ch, index) => (
-              <li key={ch.id || index}>
-                <a 
-                  href={ch.docPath || topic.docCategory || '/docs'}
-                  className="back-chapter-item"
-                  onClick={(e) => e.stopPropagation()}
-                  title={`Open ${ch.title} in Docs`}
-                >
-                  <span className="back-chapter-idx">{String(index + 1).padStart(2, '0')}</span>
-                  <span className="back-chapter-title">{ch.title}</span>
-                  <span className="back-md-tag">.md</span>
-                </a>
-              </li>
-            ))}
-          </ul>
+          {hasChapters ? (
+            <ul className="back-chapters-list">
+              {chapters.map((ch, index) => (
+                <li key={ch.id || index}>
+                  <a 
+                    href={ch.docPath || topic.docCategory || '/docs'}
+                    className="back-chapter-item"
+                    onClick={(e) => e.stopPropagation()}
+                    title={`Open ${ch.title} in Docs`}
+                  >
+                    <span className="back-chapter-idx">{String(index + 1).padStart(2, '0')}</span>
+                    <span className="back-chapter-title">{ch.title}</span>
+                    <span className="back-md-tag">.md</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <div className="back-empty-state">
+              <span className="back-empty-text">No chapters available yet.</span>
+            </div>
+          )}
         </div>
       </div>
     </div>
