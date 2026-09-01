@@ -64,6 +64,22 @@ jobs:
           name: site-build
           path: build
 
+      - name: Verify Cloudflare Secrets
+        run: |
+          if [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ]; then
+            echo "❌ ERROR: 'CLOUDFLARE_API_TOKEN' secret is missing or empty in GitHub Repository Secrets!"
+            echo "Please add it in: Settings -> Secrets and variables -> Actions -> Repository secrets"
+            exit 1
+          else
+            echo "✅ CLOUDFLARE_API_TOKEN is detected."
+          fi
+          if [ -z "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ]; then
+            echo "❌ ERROR: 'CLOUDFLARE_ACCOUNT_ID' secret is missing or empty in GitHub Repository Secrets!"
+            exit 1
+          else
+            echo "✅ CLOUDFLARE_ACCOUNT_ID is detected."
+          fi
+
       - name: Deploy to Cloudflare Pages
         run: npx wrangler pages deploy build --project-name=codewithsarvy --commit-dirty=true
         env:
