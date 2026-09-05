@@ -99,7 +99,7 @@ const config = {
               },
               {
                 label: 'React.js',
-                to: '/docs/react/modern-javascript',
+                to: '/docs/react/javascript-fundamentals',
               },
             ],
           },

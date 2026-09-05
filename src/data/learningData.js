@@ -71,14 +71,14 @@ export const learningTopics = [
     color: "#06b6d4",
     tag: "Modern UI",
     chaptersCount: "1 chapter",
-    description: "Modern ES6+ syntax, functional programming, and React essentials.",
+    description: "JavaScript fundamentals, core engine mechanics, and React essentials.",
     graphic: "react",
     docCategory: "/docs/category/reactjs--frontend",
     chapters: [
       { 
-        id: "modern-js", 
-        title: "Modern JavaScript (ES6+)",
-        docPath: "/docs/react/modern-javascript"
+        id: "js-fundamentals", 
+        title: "JavaScript Fundamentals",
+        docPath: "/docs/react/javascript-fundamentals"
       }
     ]
   },
