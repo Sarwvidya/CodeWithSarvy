@@ -1,0 +1,10 @@
+{
+  "label": "Chapter 1: JavaScript Fundamentals",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "doc",
+    "id": "react/javascript-fundamentals/index"
+  }
+}

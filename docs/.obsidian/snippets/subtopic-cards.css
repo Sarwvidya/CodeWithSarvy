@@ -18,6 +18,7 @@
               box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
               border-color 0.2s ease;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 
 .subtopic-card:hover {
@@ -102,6 +103,7 @@
 }
 
 .subtopic-card h3 {
+  position: static !important;
   font-size: 1.15rem;
   font-weight: 700;
   margin: 0 0 10px 0;
@@ -114,9 +116,20 @@
   transition: color 0.15s ease;
 }
 
-.subtopic-card h3 a:hover {
+/* Stretched Link: Makes entire card clickable in Obsidian */
+.subtopic-card h3 a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.subtopic-card:hover h3 a {
   color: var(--interactive-accent, #38bdf8);
-  text-decoration: underline;
 }
 
 .subtopic-card p {
@@ -129,11 +142,19 @@
 
 .card-actions {
   display: flex;
+  justify-content: flex-end;
   gap: 8px;
   flex-wrap: wrap;
   margin-top: auto;
   padding-top: 12px;
   border-top: 1px solid var(--background-modifier-border, rgba(255, 255, 255, 0.06));
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.card-actions > * {
+  pointer-events: auto;
 }
 
 .card-btn {

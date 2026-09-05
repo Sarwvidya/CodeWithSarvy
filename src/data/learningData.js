@@ -70,15 +70,20 @@ export const learningTopics = [
     title: "React.js & Frontend",
     color: "#06b6d4",
     tag: "Modern UI",
-    chaptersCount: "1 chapter",
-    description: "JavaScript fundamentals, core engine mechanics, and React essentials.",
+    chaptersCount: "2 chapters",
+    description: "JavaScript fundamentals, core React engine mechanics, and modern UI architecture.",
     graphic: "react",
     docCategory: "/docs/category/reactjs--frontend",
     chapters: [
       { 
         id: "js-fundamentals", 
-        title: "JavaScript Fundamentals",
+        title: "Chapter 1: JavaScript Fundamentals",
         docPath: "/docs/react/javascript-fundamentals"
+      },
+      {
+        id: "react-fundamentals",
+        title: "Chapter 2: React Fundamentals",
+        docPath: "/docs/react/react-fundamentals"
       }
     ]
   },
