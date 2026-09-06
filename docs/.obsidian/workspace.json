@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "core-java/01-oops-concepts/1.1-classes-and-objects.md",
-                "mode": "source",
+                "file": "core-java/07-multithreading/7.1-thread-creation-and-lifecycle.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.1-classes-and-objects"
+              "title": "7.1-thread-creation-and-lifecycle"
             }
           }
         ]
@@ -190,6 +190,8 @@
   },
   "active": "f80799c38981c619",
   "lastOpenFiles": [
+    "core-java/01-oops-concepts/1.1-classes-and-objects.md",
+    "core-java/07-multithreading/7.1-thread-creation-and-lifecycle.md",
     "core-java/08-garbage-collection-and-serialization/8.5-transient-and-custom-serialization.md",
     "core-java/08-garbage-collection-and-serialization/8.4-serialization-fundamentals.md",
     "core-java/08-garbage-collection-and-serialization/8.3-object-reachability-and-references.md",
@@ -203,7 +205,6 @@
     "core-java/07-multithreading/7.4-executors-and-thread-pools.md",
     "core-java/07-multithreading/7.3-volatile-and-atomic-variables.md",
     "core-java/07-multithreading/7.2-thread-synchronization-and-locks.md",
-    "core-java/07-multithreading/7.1-thread-creation-and-lifecycle.md",
     "core-java/07-multithreading/index.md",
     "core-java/07-multithreading/_category_.json",
     "core-java/07-multithreading",
@@ -221,7 +222,6 @@
     "core-java/07-garbage-collection-and-serialization/7.3-object-reachability-and-references.md",
     "core-java/07-garbage-collection-and-serialization/7.2-modern-gc-algorithms.md",
     "core-java/07-garbage-collection-and-serialization/7.1-garbage-collection-fundamentals.md",
-    "core-java/07-garbage-collection-and-serialization/index.md",
     "core-java/07-garbage-collection-and-serialization/_category_.json",
     "core-java/07-garbage-collection-and-serialization",
     "react/01-javascript-fundamentals/_category_.json",
