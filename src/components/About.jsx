@@ -24,7 +24,7 @@ export function About() {
             </a>
 
             <a 
-              href={profile.github || 'https://github.com/codewithsarvy'} 
+              href={profile.github || 'https://github.com/sarwvidya'} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-hero-secondary"

@@ -1,0 +1,10 @@
+{
+  "label": "Chapter 7: Garbage Collection & Serialization",
+  "position": 7,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "core-java/garbage-collection-and-serialization/index"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "label": "Chapter 4: Strings in Java",
+  "position": 4,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "core-java/strings/index"
+  }
+}

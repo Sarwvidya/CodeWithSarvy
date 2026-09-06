@@ -3,8 +3,8 @@ export const userProfile = {
   handle: "codewithsarvy",
   role: "Full-Stack Java & React Developer",
   bio: "Hi! I'm Sarwvidya. I build scalable backend microservices with Java & Spring Boot, create sleek responsive frontends with React, and curate clean notes for lifelong engineering learners. Welcome to my personal vault.",
-  github: "https://github.com/codewithsarvy",
-  linkedin: "https://linkedin.com/in/codewithsarvy",
+  github: "https://github.com/sarwvidya",
+  linkedin: "https://www.linkedin.com/in/sarwvidya",
   tags: ["Java 21", "Spring Boot", "React 19", "Kafka", "PostgreSQL", "System Design", "Docker"]
 };
 
@@ -14,20 +14,45 @@ export const learningTopics = [
     title: "Core Java",
     color: "#f59e0b",
     tag: "Backend Core",
-    chaptersCount: "2 chapters",
-    description: "OOPs architecture, JVM memory model, and Java design principles.",
+    chaptersCount: "7 chapters",
+    description: "OOPs architecture, JVM internals, JMM, Strings, Exceptions, Collections, Multithreading & GC.",
     graphic: "java",
-    docCategory: "/docs/category/core-java",
+    docCategory: "/docs/core-java/oops-concepts",
     chapters: [
-      { 
-        id: "oops", 
-        title: "OOPs Concepts & Principles",
+      {
+        id: "ch1-oops",
+        title: "Chapter 1: OOPs Concepts",
         docPath: "/docs/core-java/oops-concepts"
       },
-      { 
-        id: "memory-jvm", 
-        title: "JVM Internals & Memory Model",
-        docPath: "/docs/core-java/jvm-memory-model"
+      {
+        id: "ch2-overview",
+        title: "Chapter 2: Java Overview",
+        docPath: "/docs/core-java/java-overview"
+      },
+      {
+        id: "ch3-optional-jmm",
+        title: "Chapter 3: Optional, Object & JMM",
+        docPath: "/docs/core-java/optional-object-jmm"
+      },
+      {
+        id: "ch4-strings",
+        title: "Chapter 4: Strings in Java",
+        docPath: "/docs/core-java/strings"
+      },
+      {
+        id: "ch5-exceptions",
+        title: "Chapter 5: Exception Handling",
+        docPath: "/docs/core-java/exception-handling"
+      },
+      {
+        id: "ch6-collections-threads",
+        title: "Chapter 6: Collections & Multithreading",
+        docPath: "/docs/core-java/collections-and-multithreading"
+      },
+      {
+        id: "ch7-gc-serialization",
+        title: "Chapter 7: GC & Serialization",
+        docPath: "/docs/core-java/garbage-collection-and-serialization"
       }
     ]
   },
@@ -41,8 +66,8 @@ export const learningTopics = [
     graphic: "dsa",
     docCategory: "/docs/category/data-structures--algorithms",
     chapters: [
-      { 
-        id: "complexity", 
+      {
+        id: "complexity",
         title: "Time & Space Complexity (Big-O)",
         docPath: "/docs/dsa/time-space-complexity"
       }
@@ -58,8 +83,8 @@ export const learningTopics = [
     graphic: "spring",
     docCategory: "/docs/category/spring-boot--microservices",
     chapters: [
-      { 
-        id: "spring-core", 
+      {
+        id: "spring-core",
         title: "Spring Core & Inversion of Control",
         docPath: "/docs/spring-boot/spring-core-ioc"
       }
@@ -75,8 +100,8 @@ export const learningTopics = [
     graphic: "react",
     docCategory: "/docs/category/reactjs--frontend",
     chapters: [
-      { 
-        id: "js-fundamentals", 
+      {
+        id: "js-fundamentals",
         title: "Chapter 1: JavaScript Fundamentals",
         docPath: "/docs/react/javascript-fundamentals"
       },
@@ -97,8 +122,8 @@ export const learningTopics = [
     graphic: "system-design",
     docCategory: "/docs/category/system-design--databases",
     chapters: [
-      { 
-        id: "sql-indexing", 
+      {
+        id: "sql-indexing",
         title: "Relational DBs & B-Tree Indexing",
         docPath: "/docs/system-design/sql-indexing"
       }
@@ -114,8 +139,8 @@ export const learningTopics = [
     graphic: "devops",
     docCategory: "/docs/category/devops--tools",
     chapters: [
-      { 
-        id: "git", 
+      {
+        id: "git",
         title: "Git Workflows & Rebasing",
         docPath: "/docs/devops/git-workflows"
       }

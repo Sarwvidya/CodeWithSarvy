@@ -1,0 +1,10 @@
+{
+  "label": "Chapter 5: Exception Handling",
+  "position": 5,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "core-java/exception-handling/index"
+  }
+}

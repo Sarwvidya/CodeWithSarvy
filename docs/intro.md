@@ -18,7 +18,7 @@ These notes are written in standard Markdown (`.md`). You can directly open this
 
 Explore in-depth chapters across 6 core domains:
 
-- [**Core Java**](/docs/core-java/oops-concepts) (OOPs, JVM Architecture, Memory Model, Collections, Concurrency, Streams)
+- [**Core Java**](/docs/core-java/oops-concepts) (OOPs Concepts, Java Overview, Optional & JMM, Strings, Exception Handling, Collections & Multithreading, Garbage Collection & Serialization)
 - [**DSA & Algorithms**](/docs/dsa/time-space-complexity) (Big-O, Sliding Window, Trees, Graphs, Dynamic Programming)
 - [**Spring Boot & Microservices**](/docs/spring-boot/spring-core-ioc) (IoC, RESTful APIs, Spring Data JPA, Security 6 JWT, Kafka)
 - [**React & Frontend**](/docs/react/javascript-fundamentals) (JavaScript Fundamentals, Modern ES6+, Closures, Async, Virtual DOM)

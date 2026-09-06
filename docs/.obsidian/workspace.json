@@ -11,10 +11,14 @@
             "id": "f80799c38981c619",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "core-java/01-oops-concepts/1.1-classes-and-objects.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "1.1-classes-and-objects"
             }
           }
         ]
@@ -186,6 +190,18 @@
   },
   "active": "f80799c38981c619",
   "lastOpenFiles": [
+    "core-java/07-garbage-collection-and-serialization/7.5-transient-and-custom-serialization.md",
+    "core-java/07-garbage-collection-and-serialization/7.4-serialization-fundamentals.md",
+    "core-java/07-garbage-collection-and-serialization/7.3-object-reachability-and-references.md",
+    "core-java/07-garbage-collection-and-serialization/7.2-modern-gc-algorithms.md",
+    "core-java/07-garbage-collection-and-serialization/7.1-garbage-collection-fundamentals.md",
+    "core-java/07-garbage-collection-and-serialization/index.md",
+    "core-java/07-garbage-collection-and-serialization/_category_.json",
+    "core-java/07-garbage-collection-and-serialization",
+    "core-java/06-collections-and-multithreading/6.6-virtual-threads-java-21.md",
+    "core-java/06-collections-and-multithreading/6.5-concurrent-utilities-and-executors.md",
+    "core-java/06-collections-and-multithreading/6.4-thread-synchronization-and-locks.md",
+    "core-java/06-collections-and-multithreading/6.3-thread-creation-and-lifecycle.md",
     "react/02-variables-and-data-types.md",
     "react/01-javascript-fundamentals/1.8-error-handling-and-debugging.md",
     "react/01-javascript-fundamentals/1.7-dom-and-events.md",
@@ -203,9 +219,6 @@
     "react/08-dom-and-events.md",
     "react/07-array-and-object-methods.md",
     "react/06-modern-es6-plus.md",
-    "react/05-asynchronous-javascript.md",
-    "react/04-objects-and-prototypes.md",
-    "react/03-functions-and-closures.md",
-    "core-java/01-oops-concepts.md"
+    "react/05-asynchronous-javascript.md"
   ]
 }

@@ -68,19 +68,18 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/codewithsarvy',
+            href: 'https://github.com/sarwvidya',
             label: 'GitHub',
             position: 'right',
           },
           {
-            href: 'https://linkedin.com/in/codewithsarvy',
+            href: 'https://www.linkedin.com/in/sarwvidya',
             label: 'LinkedIn',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
         links: [
           {
             title: 'Knowledge Vault',
@@ -108,11 +107,11 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/codewithsarvy',
+                href: 'https://github.com/sarwvidya',
               },
               {
                 label: 'LinkedIn',
-                href: 'https://linkedin.com/in/codewithsarvy',
+                href: 'https://www.linkedin.com/in/sarwvidya',
               },
             ],
           },

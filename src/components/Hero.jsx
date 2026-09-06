@@ -67,7 +67,7 @@ public class DeveloperInfo {
             </a>
             
             <a 
-              href={userProfile.socialLinks.linkedin} 
+              href={userProfile.linkedin || 'https://www.linkedin.com/in/sarwvidya'} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn-secondary"
@@ -77,7 +77,7 @@ public class DeveloperInfo {
             </a>
 
             <a 
-              href={userProfile.socialLinks.github} 
+              href={userProfile.github || 'https://github.com/sarwvidya'} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn-outline"
