@@ -14,7 +14,7 @@ export const learningTopics = [
     title: "Core Java",
     color: "#f59e0b",
     tag: "Backend Core",
-    chaptersCount: "7 chapters",
+    chaptersCount: "8 chapters",
     description: "OOPs architecture, JVM internals, JMM, Strings, Exceptions, Collections, Multithreading & GC.",
     graphic: "java",
     docCategory: "/docs/core-java/oops-concepts",
@@ -45,13 +45,18 @@ export const learningTopics = [
         docPath: "/docs/core-java/exception-handling"
       },
       {
-        id: "ch6-collections-threads",
-        title: "Chapter 6: Collections & Multithreading",
-        docPath: "/docs/core-java/collections-and-multithreading"
+        id: "ch6-collections",
+        title: "Chapter 6: Collections Framework",
+        docPath: "/docs/core-java/collections"
       },
       {
-        id: "ch7-gc-serialization",
-        title: "Chapter 7: GC & Serialization",
+        id: "ch7-multithreading",
+        title: "Chapter 7: Multithreading & Concurrency",
+        docPath: "/docs/core-java/multithreading"
+      },
+      {
+        id: "ch8-gc-serialization",
+        title: "Chapter 8: GC & Serialization",
         docPath: "/docs/core-java/garbage-collection-and-serialization"
       }
     ]
