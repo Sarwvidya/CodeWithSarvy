@@ -1372,6 +1372,127 @@ html.docs-doc-page .main-wrapper,
   flex-grow: 1;
 }
 
+/* Card Table of Contents / Topic Index */
+.subtopic-card .card-toc {
+  margin: 6px 0 20px 0;
+  padding: 0 4px 0 0;
+  flex-grow: 1;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  max-height: 250px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.subtopic-card .card-toc::-webkit-scrollbar {
+  width: 4px;
+}
+.subtopic-card .card-toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+.subtopic-card .card-toc::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 4px;
+}
+
+.subtopic-card .card-toc ul,
+.subtopic-card .card-toc ol {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+
+.subtopic-card .card-toc li {
+  position: relative;
+  margin-bottom: 6px;
+  list-style: none !important;
+  transition: all 0.15s ease;
+  word-break: break-word;
+}
+
+/* Sub-items (h3) */
+.subtopic-card .card-toc li ul,
+.subtopic-card .card-toc li ol {
+  padding-left: 12px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  border-left: 2px solid rgba(148, 163, 184, 0.2);
+}
+
+.subtopic-card .card-toc li ul li,
+.subtopic-card .card-toc li ol li {
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+  opacity: 0.92;
+}
+
+.subtopic-card .card-toc a {
+  pointer-events: auto;
+  text-decoration: none !important;
+  display: inline-block;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.subtopic-card .card-toc a:hover {
+  transform: translateX(3px);
+}
+
+.subtopic-card .card-toc code {
+  font-size: 0.76rem;
+  padding: 1px 5px;
+  border-radius: 4px;
+  vertical-align: baseline;
+  font-family: var(--ifm-font-family-monospace, monospace);
+}
+
+/* Light Theme Card TOC */
+[data-theme='light'] .subtopic-card .card-toc {
+  color: #334155;
+}
+[data-theme='light'] .subtopic-card .card-toc a {
+  color: #334155;
+}
+[data-theme='light'] .subtopic-card .card-toc a:hover {
+  color: #0284c7;
+}
+[data-theme='light'] .subtopic-card .card-toc li ul {
+  border-left-color: rgba(15, 23, 42, 0.12);
+}
+
+/* Dark Theme Card TOC */
+[data-theme='dark'] .subtopic-card .card-toc {
+  color: #94a3b8;
+}
+[data-theme='dark'] .subtopic-card .card-toc a {
+  color: #94a3b8;
+}
+[data-theme='dark'] .subtopic-card .card-toc a:hover {
+  color: #38bdf8;
+}
+[data-theme='dark'] .subtopic-card .card-toc li ul {
+  border-left-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Card-Color Specific Hover Accents */
+.card-cyan .card-toc a:hover { color: #0891b2 !important; }
+[data-theme='dark'] .card-cyan .card-toc a:hover { color: #22d3ee !important; }
+.card-purple .card-toc a:hover { color: #7e22ce !important; }
+[data-theme='dark'] .card-purple .card-toc a:hover { color: #c084fc !important; }
+.card-amber .card-toc a:hover { color: #b45309 !important; }
+[data-theme='dark'] .card-amber .card-toc a:hover { color: #fbbf24 !important; }
+.card-emerald .card-toc a:hover { color: #047857 !important; }
+[data-theme='dark'] .card-emerald .card-toc a:hover { color: #34d399 !important; }
+.card-blue .card-toc a:hover { color: #1d4ed8 !important; }
+[data-theme='dark'] .card-blue .card-toc a:hover { color: #60a5fa !important; }
+.card-indigo .card-toc a:hover { color: #4338ca !important; }
+[data-theme='dark'] .card-indigo .card-toc a:hover { color: #818cf8 !important; }
+.card-rose .card-toc a:hover { color: #be123c !important; }
+[data-theme='dark'] .card-rose .card-toc a:hover { color: #fb7185 !important; }
+
+
 .card-actions {
   display: flex;
   justify-content: flex-end;

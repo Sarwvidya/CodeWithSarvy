@@ -27,7 +27,12 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 ### [4.1 String Immutability & the String Pool](./4.1-string-immutability-and-scp.md)
 
-Why Strings are final & immutable, memory conservation via the String Constant Pool (SCP) in Heap, security implications, and thread-safety guarantees.
+<div class="card-toc">
+
+- [1. Why is String Immutable in Java?](./4.1-string-immutability-and-scp.md#1-why-is-string-immutable-in-java)
+- [2. The String Constant Pool (SCP) Architecture](./4.1-string-immutability-and-scp.md#2-the-string-constant-pool-scp-architecture)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F04-strings%2F4.1-string-immutability-and-scp" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -43,7 +48,12 @@ Why Strings are final & immutable, memory conservation via the String Constant P
 
 ### [4.2 String vs StringBuilder vs StringBuffer](./4.2-string-vs-stringbuilder-vs-stringbuffer.md)
 
-Comparing mutability, internal `byte[]` buffer growth algorithms, thread-safety benchmarks, and when to avoid the `+` concatenation operator in loops.
+<div class="card-toc">
+
+- [1. Feature Comparison Matrix](./4.2-string-vs-stringbuilder-vs-stringbuffer.md#1-feature-comparison-matrix)
+- [2. The String Concatenation Anti-Pattern in Loops](./4.2-string-vs-stringbuilder-vs-stringbuffer.md#2-the-string-concatenation-anti-pattern-in-loops)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F04-strings%2F4.2-string-vs-stringbuilder-vs-stringbuffer" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -59,7 +69,13 @@ Comparing mutability, internal `byte[]` buffer growth algorithms, thread-safety 
 
 ### [4.3 String Equality & .intern() Mechanics](./4.3-string-comparison-and-interning.md)
 
-The difference between `==` (reference identity) and `.equals()` (content equivalence), explicit pool caching with `.intern()`, and compile-time literal folding.
+<div class="card-toc">
+
+- [1. `==` vs `.equals()` vs `.compareTo()`](./4.3-string-comparison-and-interning.md#1--vs-equals-vs-compareto)
+- [2. Compile-Time Literal Folding](./4.3-string-comparison-and-interning.md#2-compile-time-literal-folding)
+- [3. The `.intern()` Method](./4.3-string-comparison-and-interning.md#3-the-intern-method)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F04-strings%2F4.3-string-comparison-and-interning" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -75,7 +91,13 @@ The difference between `==` (reference identity) and `.equals()` (content equiva
 
 ### [4.4 Essential Modern String Methods](./4.4-essential-string-methods.md)
 
-Modern String manipulation: `strip()`, `isBlank()`, `lines()`, `repeat()`, `join()`, `replace()`, and high-throughput regex matching patterns.
+<div class="card-toc">
+
+- [1. Modern String Inspection (Java 11+)](./4.4-essential-string-methods.md#1-modern-string-inspection-java-11)
+- [2. Advanced Whitespace Stripping: `strip()` vs `trim()`](./4.4-essential-string-methods.md#2-advanced-whitespace-stripping-strip-vs-trim)
+- [3. Transformations & Multi-line Operations](./4.4-essential-string-methods.md#3-transformations--multi-line-operations)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F04-strings%2F4.4-essential-string-methods" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -91,7 +113,15 @@ Modern String manipulation: `strip()`, `isBlank()`, `lines()`, `repeat()`, `join
 
 ### [4.5 Text Blocks & Compact Strings](./4.5-text-blocks-and-compact-strings.md)
 
-Multi-line Text Blocks (`"""`) with automated whitespace stripping, and JVM internal Compact Strings (Latin-1 1-byte vs UTF-16 2-byte encoding flag).
+<div class="card-toc">
+
+- [1. Text Blocks (Java 15 LTS)](./4.5-text-blocks-and-compact-strings.md#1-text-blocks-java-15-lts)
+  - [Incidental Whitespace Stripping](./4.5-text-blocks-and-compact-strings.md#incidental-whitespace-stripping)
+  - [Escape Sequences in Text Blocks](./4.5-text-blocks-and-compact-strings.md#escape-sequences-in-text-blocks)
+- [2. Compact Strings (Java 9 JVM Optimization)](./4.5-text-blocks-and-compact-strings.md#2-compact-strings-java-9-jvm-optimization)
+  - [The Compact Strings Solution (JEP 254)](./4.5-text-blocks-and-compact-strings.md#the-compact-strings-solution-jep-254)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F04-strings%2F4.5-text-blocks-and-compact-strings" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>

@@ -27,7 +27,13 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 ### [8.1 Garbage Collection Fundamentals](./8.1-garbage-collection-fundamentals.md)
 
-Weak Generational Hypothesis, Eden, Survivor (S0/S1), Tenured generation, Mark-Sweep-Compact, and Stop-The-World (STW) pause metrics.
+<div class="card-toc">
+
+- [1. The Weak Generational Hypothesis](./8.1-garbage-collection-fundamentals.md#1-the-weak-generational-hypothesis)
+- [2. The Core GC Phases](./8.1-garbage-collection-fundamentals.md#2-the-core-gc-phases)
+- [3. GC Stop-The-World (STW) Pauses](./8.1-garbage-collection-fundamentals.md#3-gc-stop-the-world-stw-pauses)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F08-garbage-collection-and-serialization%2F8.1-garbage-collection-fundamentals" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -43,7 +49,13 @@ Weak Generational Hypothesis, Eden, Survivor (S0/S1), Tenured generation, Mark-S
 
 ### [8.2 Modern GC Collectors (G1, ZGC & Shenandoah)](./8.2-modern-gc-algorithms.md)
 
-Serial vs Parallel vs G1 GC (region-based memory partitioning), and ultra-low latency concurrent collectors (ZGC & Shenandoah sub-millisecond pauses).
+<div class="card-toc">
+
+- [1. Evolution of HotSpot GC Collectors](./8.2-modern-gc-algorithms.md#1-evolution-of-hotspot-gc-collectors)
+- [2. G1 GC: Region-Based Memory Partitioning](./8.2-modern-gc-algorithms.md#2-g1-gc-region-based-memory-partitioning)
+- [3. ZGC: Ultra-Low Latency Scalable Collector](./8.2-modern-gc-algorithms.md#3-zgc-ultra-low-latency-scalable-collector)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F08-garbage-collection-and-serialization%2F8.2-modern-gc-algorithms" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -59,7 +71,15 @@ Serial vs Parallel vs G1 GC (region-based memory partitioning), and ultra-low la
 
 ### [8.3 Object Reachability & Reference Types](./8.3-object-reachability-and-references.md)
 
-Strong, Soft (`SoftReference`), Weak (`WeakReference` & `WeakHashMap`), Phantom (`PhantomReference`), and `Cleaner` / `ReferenceQueue` post-mortem cleanup.
+<div class="card-toc">
+
+- [1. Reference Strength Hierarchy](./8.3-object-reachability-and-references.md#1-reference-strength-hierarchy)
+- [2. Real-World Architectural Use Cases](./8.3-object-reachability-and-references.md#2-real-world-architectural-use-cases)
+  - [SoftReference: Memory-Sensitive In-Memory Caches](./8.3-object-reachability-and-references.md#softreference-memory-sensitive-in-memory-caches)
+  - [WeakReference: `WeakHashMap` & Metadata Registries](./8.3-object-reachability-and-references.md#weakreference-weakhashmap--metadata-registries)
+  - [PhantomReference & `java.lang.ref.Cleaner`](./8.3-object-reachability-and-references.md#phantomreference--javalangrefcleaner)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F08-garbage-collection-and-serialization%2F8.3-object-reachability-and-references" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -75,7 +95,13 @@ Strong, Soft (`SoftReference`), Weak (`WeakReference` & `WeakHashMap`), Phantom 
 
 ### [8.4 Serialization Fundamentals & UID](./8.4-serialization-fundamentals.md)
 
-`Serializable` marker interface, binary byte stream conversion (`ObjectOutputStream`), `serialVersionUID` evolution compatibility, and security exploits.
+<div class="card-toc">
+
+- [1. The `Serializable` Marker Interface](./8.4-serialization-fundamentals.md#1-the-serializable-marker-interface)
+- [2. Writing and Reading Streams](./8.4-serialization-fundamentals.md#2-writing-and-reading-streams)
+- [3. The `serialVersionUID` Contract](./8.4-serialization-fundamentals.md#3-the-serialversionuid-contract)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F08-garbage-collection-and-serialization%2F8.4-serialization-fundamentals" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -91,7 +117,13 @@ Strong, Soft (`SoftReference`), Weak (`WeakReference` & `WeakHashMap`), Phantom 
 
 ### [8.5 Transient Fields & Custom Serialization](./8.5-transient-and-custom-serialization.md)
 
-The `transient` keyword for security and caching exclusion, private `writeObject`/`readObject` custom hooks, and `Externalizable` direct stream control.
+<div class="card-toc">
+
+- [1. The `transient` Keyword](./8.5-transient-and-custom-serialization.md#1-the-transient-keyword)
+- [2. Custom Serialization Hooks: `writeObject` & `readObject`](./8.5-transient-and-custom-serialization.md#2-custom-serialization-hooks-writeobject--readobject)
+- [3. `Externalizable`: Full Manual Stream Control](./8.5-transient-and-custom-serialization.md#3-externalizable-full-manual-stream-control)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F08-garbage-collection-and-serialization%2F8.5-transient-and-custom-serialization" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>

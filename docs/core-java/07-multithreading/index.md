@@ -27,7 +27,21 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 ### [7.1 Thread Creation & 6 Lifecycle States](./7.1-thread-creation-and-lifecycle.md)
 
-Processes vs threads, `Thread` vs `Runnable` vs `Callable<V>`, the 6 JVM thread lifecycle states (NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED), and daemon threads.
+<div class="card-toc">
+
+- [1. Process vs Thread](./7.1-thread-creation-and-lifecycle.md#1-process-vs-thread)
+- [2. Ways to Define and Launch Threads](./7.1-thread-creation-and-lifecycle.md#2-ways-to-define-and-launch-threads)
+  - [2.1. Approach 1: Extending Thread class](./7.1-thread-creation-and-lifecycle.md#21-approach-1-extending-thread-class)
+  - [2.2. Approach 2: Implementing Runnable (Preferred over extending Thread)](./7.1-thread-creation-and-lifecycle.md#22-approach-2-implementing-runnable-preferred-over-extending-thread)
+  - [2.3 Approach 3: `Callable<V>` with `Future<V>` (Returns a value, throws checked exceptions)](./7.1-thread-creation-and-lifecycle.md#23-approach-3-callablev-with-futurev-returns-a-value-throws-checked-exceptions)
+- [3. Daemon vs User Threads](./7.1-thread-creation-and-lifecycle.md#3-daemon-vs-user-threads)
+- [4. Runnable, Callable, & Future](./7.1-thread-creation-and-lifecycle.md#4-runnable-callable--future)
+  - [Runnable -](./7.1-thread-creation-and-lifecycle.md#runnable--)
+  - [Callable -](./7.1-thread-creation-and-lifecycle.md#callable--)
+  - [Future -](./7.1-thread-creation-and-lifecycle.md#future--)
+- [5. The 6 JVM Thread Lifecycle States (`Thread.State`)](./7.1-thread-creation-and-lifecycle.md#5-the-6-jvm-thread-lifecycle-states-threadstate)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F07-multithreading%2F7.1-thread-creation-and-lifecycle" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -43,7 +57,27 @@ Processes vs threads, `Thread` vs `Runnable` vs `Callable<V>`, the 6 JVM thread 
 
 ### [7.2 Thread Synchronization & Locks](./7.2-thread-synchronization-and-locks.md)
 
-Critical sections, intrinsic monitor locks (`synchronized`), `wait()`, `notify()`, `notifyAll()`, `ReentrantLock`, `ReadWriteLock`, and deadlock prevention algorithms.
+<div class="card-toc">
+
+- [Synchronization](./7.2-thread-synchronization-and-locks.md#synchronization)
+- [Problems that Synchronization solves](./7.2-thread-synchronization-and-locks.md#problems-that-synchronization-solves)
+  - [1. Race Condition — the biggest problem ✅](./7.2-thread-synchronization-and-locks.md#1-race-condition--the-biggest-problem-)
+  - [2. Data Inconsistency ✅](./7.2-thread-synchronization-and-locks.md#2-data-inconsistency-)
+  - [3. Lost Update ✅](./7.2-thread-synchronization-and-locks.md#3-lost-update-)
+  - [4. Visibility Problem ✅](./7.2-thread-synchronization-and-locks.md#4-visibility-problem-)
+  - [5. Atomicity Problem ✅](./7.2-thread-synchronization-and-locks.md#5-atomicity-problem-)
+  - [6. Deadlock — Synchronization doesn't solve it ❌](./7.2-thread-synchronization-and-locks.md#6-deadlock--synchronization-doesnt-solve-it-)
+  - [7. Starvation ❌](./7.2-thread-synchronization-and-locks.md#7-starvation-)
+  - [8. Livelock ❌](./7.2-thread-synchronization-and-locks.md#8-livelock-)
+- [Locks](./7.2-thread-synchronization-and-locks.md#locks)
+  - [What does a lock actually provide?](./7.2-thread-synchronization-and-locks.md#what-does-a-lock-actually-provide)
+- [Lock vs synchronized](./7.2-thread-synchronization-and-locks.md#lock-vs-synchronized)
+  - [Inter-Thread Signaling: `wait()`, `notify()`, and `notifyAll()`](./7.2-thread-synchronization-and-locks.md#inter-thread-signaling-wait-notify-and-notifyall)
+  - [Explicit Locks: `java.util.concurrent.locks`](./7.2-thread-synchronization-and-locks.md#explicit-locks-javautilconcurrentlocks)
+  - [`ReentrantLock` Capabilities](./7.2-thread-synchronization-and-locks.md#reentrantlock-capabilities)
+  - [`ReentrantReadWriteLock`](./7.2-thread-synchronization-and-locks.md#reentrantreadwritelock)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F07-multithreading%2F7.2-thread-synchronization-and-locks" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -59,7 +93,17 @@ Critical sections, intrinsic monitor locks (`synchronized`), `wait()`, `notify()
 
 ### [7.3 Volatile & Atomic Variables](./7.3-volatile-and-atomic-variables.md)
 
-CPU cache coherence, instruction reordering, `volatile` memory barriers (happens-before visibility), and hardware-level lock-free CAS (`AtomicInteger`, `AtomicReference`).
+<div class="card-toc">
+
+- [1. The `volatile` Keyword: Visibility & Reordering](./7.3-volatile-and-atomic-variables.md#1-the-volatile-keyword-visibility--reordering)
+  - [What `volatile` Guarantees:](./7.3-volatile-and-atomic-variables.md#what-volatile-guarantees)
+  - [What `volatile` Does NOT Guarantee:](./7.3-volatile-and-atomic-variables.md#what-volatile-does-not-guarantee)
+- [2. Atomicity (`java.util.concurrent.atomic`)](./7.3-volatile-and-atomic-variables.md#2-atomicity-javautilconcurrentatomic)
+  - [How do we solve the atomicity problem?](./7.3-volatile-and-atomic-variables.md#how-do-we-solve-the-atomicity-problem)
+  - [How Compare-And-Swap (CAS) Works](./7.3-volatile-and-atomic-variables.md#how-compare-and-swap-cas-works)
+- [volatile vs Atomic](./7.3-volatile-and-atomic-variables.md#volatile-vs-atomic)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F07-multithreading%2F7.3-volatile-and-atomic-variables" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -75,7 +119,20 @@ CPU cache coherence, instruction reordering, `volatile` memory barriers (happens
 
 ### [7.4 Executors & Thread Pools](./7.4-executors-and-thread-pools.md)
 
-`ExecutorService`, `ThreadPoolExecutor` internal tuning (corePoolSize, maxPoolSize, blocking queues, rejection handlers), CPU vs I/O pool sizing, and clean shutdown.
+<div class="card-toc">
+
+- [What is Thread Pool?](./7.4-executors-and-thread-pools.md#what-is-thread-pool)
+- [What is ExecutorService?](./7.4-executors-and-thread-pools.md#what-is-executorservice)
+  - [Why we need Thread Pool? Why can't we simply do new Thread()?](./7.4-executors-and-thread-pools.md#why-we-need-thread-pool-why-cant-we-simply-do-new-thread)
+- [Different common Thread Pools :](./7.4-executors-and-thread-pools.md#different-common-thread-pools-)
+  - [1. newFixedThreadPool()](./7.4-executors-and-thread-pools.md#1-newfixedthreadpool)
+  - [2. newCachedThreadPool()](./7.4-executors-and-thread-pools.md#2-newcachedthreadpool)
+  - [3. newSingleThreadExecutor()](./7.4-executors-and-thread-pools.md#3-newsinglethreadexecutor)
+- [How is this related to Spring Boot?](./7.4-executors-and-thread-pools.md#how-is-this-related-to-spring-boot)
+- [Thread Pool Sizing Formulas](./7.4-executors-and-thread-pools.md#thread-pool-sizing-formulas)
+- [4. Graceful Shutdown Protocol](./7.4-executors-and-thread-pools.md#4-graceful-shutdown-protocol)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F07-multithreading%2F7.4-executors-and-thread-pools" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -91,7 +148,14 @@ CPU cache coherence, instruction reordering, `volatile` memory barriers (happens
 
 ### [7.5 Synchronizers & Concurrent Tools](./7.5-synchronizers-and-concurrent-tools.md)
 
-Thread coordination with `CountDownLatch` (one-shot release), `CyclicBarrier` (multi-phase barriers), `Semaphore` (rate limiting), and `BlockingQueue` (producer-consumer).
+<div class="card-toc">
+
+- [1. CountDownLatch: One-Time Countdown Gate](./7.5-synchronizers-and-concurrent-tools.md#1-countdownlatch-one-time-countdown-gate)
+- [2. CyclicBarrier: Multi-Thread Meeting Point](./7.5-synchronizers-and-concurrent-tools.md#2-cyclicbarrier-multi-thread-meeting-point)
+- [3. Semaphore: Resource Rate Limiting & Permits](./7.5-synchronizers-and-concurrent-tools.md#3-semaphore-resource-rate-limiting--permits)
+- [4. BlockingQueue: Producer-Consumer Engine](./7.5-synchronizers-and-concurrent-tools.md#4-blockingqueue-producer-consumer-engine)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F07-multithreading%2F7.5-synchronizers-and-concurrent-tools" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -107,11 +171,51 @@ Thread coordination with `CountDownLatch` (one-shot release), `CyclicBarrier` (m
 
 ### [7.6 Virtual Threads & Structured Concurrency](./7.6-virtual-threads-and-structured-concurrency.md)
 
-Java 21 Project Loom: 1:1 OS threads vs M:N Virtual Threads, Carrier Thread continuation unmounting during blocking I/O, and Structured Task Scopes.
+<div class="card-toc">
+
+- [1. Platform (OS) Threads vs Virtual Threads](./7.6-virtual-threads-and-structured-concurrency.md#1-platform-os-threads-vs-virtual-threads)
+- [2. Launching Virtual Threads](./7.6-virtual-threads-and-structured-concurrency.md#2-launching-virtual-threads)
+- [3. The Thread Pinning Caveat](./7.6-virtual-threads-and-structured-concurrency.md#3-the-thread-pinning-caveat)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F07-multithreading%2F7.6-virtual-threads-and-structured-concurrency" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
   </div>
 </div>
 
+<div class="subtopic-card card-rose">
+  <div class="card-meta">
+    <span class="card-badge">Concurrent Collections</span>
+    <span class="card-step">7.7</span>
+  </div>
+  <div class="card-icon">🛡️</div>
+
+### [7.7 Thread-Safe Collections](./7.7-thread-safe-collections.md)
+
+<div class="card-toc">
+
+- [1. The Problem with Standard Collections Under Concurrency](./7.7-thread-safe-collections.md#1-the-problem-with-standard-collections-under-concurrency)
+- [2. Legacy Synchronized Collections (`java.util`)](./7.7-thread-safe-collections.md#2-legacy-synchronized-collections-javautil)
+  - [2.1 `Vector` and `Hashtable` (Legacy)](./7.7-thread-safe-collections.md#21-vector-and-hashtable-legacy)
+  - [2.2 `Collections.synchronizedList()` & `Collections.synchronizedMap()`](./7.7-thread-safe-collections.md#22-collectionssynchronizedlist--collectionssynchronizedmap)
+- [3. Modern Concurrent Collections (`java.util.concurrent`)](./7.7-thread-safe-collections.md#3-modern-concurrent-collections-javautilconcurrent)
+  - [3.1 `ConcurrentHashMap`](./7.7-thread-safe-collections.md#31-concurrenthashmap)
+- [4. Copy-On-Write Collections](./7.7-thread-safe-collections.md#4-copy-on-write-collections)
+  - [4.1 `CopyOnWriteArrayList` & `CopyOnWriteArraySet`](./7.7-thread-safe-collections.md#41-copyonwritearraylist--copyonwritearrayset)
+- [5. Concurrent Queues & Deques](./7.7-thread-safe-collections.md#5-concurrent-queues--deques)
+  - [5.1 Blocking Queues (`BlockingQueue`)](./7.7-thread-safe-collections.md#51-blocking-queues-blockingqueue)
+  - [5.2 Non-Blocking Lock-Free Queues (`ConcurrentLinkedQueue`)](./7.7-thread-safe-collections.md#52-non-blocking-lock-free-queues-concurrentlinkedqueue)
+- [6. Sorted Concurrent Collections](./7.7-thread-safe-collections.md#6-sorted-concurrent-collections)
+  - [6.1 `ConcurrentSkipListMap` & `ConcurrentSkipListSet`](./7.7-thread-safe-collections.md#61-concurrentskiplistmap--concurrentskiplistset)
+- [7. Collection Selection Matrix](./7.7-thread-safe-collections.md#7-collection-selection-matrix)
+
 </div>
+
+  <div class="card-actions">
+    <a href="obsidian://open?vault=docs&file=core-java%2F07-multithreading%2F7.7-thread-safe-collections" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
+  </div>
+</div>
+
+</div>
+

@@ -41,6 +41,8 @@ const config = {
     ],
   ],
 
+  plugins: ['./plugins/auto-card-toc.js'],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

@@ -9,7 +9,10 @@
     "clear": "docusaurus clear",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "dev": "docusaurus start"
+    "dev": "docusaurus start",
+    "prebuild": "node scripts/generate-card-indexes.js",
+    "update-indexes": "node scripts/generate-card-indexes.js",
+    "watch-indexes": "node scripts/generate-card-indexes.js --watch"
   },
   "dependencies": {
     "@docusaurus/core": "^3.7.0",

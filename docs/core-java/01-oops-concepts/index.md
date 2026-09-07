@@ -27,7 +27,13 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 ### [1.1 Classes, Objects & Instantiation](./1.1-classes-and-objects.md)
 
-Explore blueprints vs instances, heap memory allocation, reference variables on the thread stack, the `new` operator lifecycle, and constructors.
+<div class="card-toc">
+
+- [1. Class vs Object: The Conceptual Difference](./1.1-classes-and-objects.md#1-class-vs-object-the-conceptual-difference)
+- [2. JVM Memory Allocation During Object Creation](./1.1-classes-and-objects.md#2-jvm-memory-allocation-during-object-creation)
+- [3. Anatomy of a Clean Java Class](./1.1-classes-and-objects.md#3-anatomy-of-a-clean-java-class)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F01-oops-concepts%2F1.1-classes-and-objects" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -43,7 +49,13 @@ Explore blueprints vs instances, heap memory allocation, reference variables on 
 
 ### [1.2 Encapsulation & Access Modifiers](./1.2-encapsulation-and-data-hiding.md)
 
-Data hiding via `private` fields, defensive copying in accessors, JavaBean conventions, and Java's 4 access levels (`public`, `protected`, default, `private`).
+<div class="card-toc">
+
+- [1. Why Encapsulation Matters](./1.2-encapsulation-and-data-hiding.md#1-why-encapsulation-matters)
+- [2. Java Access Modifiers Matrix](./1.2-encapsulation-and-data-hiding.md#2-java-access-modifiers-matrix)
+- [3. Defensive Copying: Preventing Leakage](./1.2-encapsulation-and-data-hiding.md#3-defensive-copying-preventing-leakage)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F01-oops-concepts%2F1.2-encapsulation-and-data-hiding" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -59,7 +71,14 @@ Data hiding via `private` fields, defensive copying in accessors, JavaBean conve
 
 ### [1.3 Inheritance & Composition](./1.3-inheritance-and-composition.md)
 
-Code reuse via `extends`, constructor chaining with `super()`, IS-A vs HAS-A modeling, and why composition is favored over inheritance in production.
+<div class="card-toc">
+
+- [1. Inheritance (`IS-A` Relationship)](./1.3-inheritance-and-composition.md#1-inheritance-is-a-relationship)
+  - [Key Inheritance Constraints in Java](./1.3-inheritance-and-composition.md#key-inheritance-constraints-in-java)
+- [2. Composition (`HAS-A` Relationship)](./1.3-inheritance-and-composition.md#2-composition-has-a-relationship)
+- [3. "Favor Composition over Inheritance"](./1.3-inheritance-and-composition.md#3-favor-composition-over-inheritance)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F01-oops-concepts%2F1.3-inheritance-and-composition" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -75,7 +94,14 @@ Code reuse via `extends`, constructor chaining with `super()`, IS-A vs HAS-A mod
 
 ### [1.4 Polymorphism & Method Dispatch](./1.4-polymorphism.md)
 
-Compile-time overloading vs Runtime method overriding, Dynamic Method Dispatch via the JVM vtable, `@Override` mechanics, and covariant returns.
+<div class="card-toc">
+
+- [1. Compile-Time Polymorphism (Method Overloading)](./1.4-polymorphism.md#1-compile-time-polymorphism-method-overloading)
+- [2. Runtime Polymorphism (Dynamic Method Dispatch)](./1.4-polymorphism.md#2-runtime-polymorphism-dynamic-method-dispatch)
+- [3. How Dynamic Dispatch Works Under the Hood](./1.4-polymorphism.md#3-how-dynamic-dispatch-works-under-the-hood)
+- [4. Covariant Return Types](./1.4-polymorphism.md#4-covariant-return-types)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F01-oops-concepts%2F1.4-polymorphism" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -91,7 +117,16 @@ Compile-time overloading vs Runtime method overriding, Dynamic Method Dispatch v
 
 ### [1.5 Abstraction & Modern Interfaces](./1.5-abstraction-and-interfaces.md)
 
-Abstract classes vs Interfaces, modern interface evolution (default, static, and private methods), loose coupling, and dependency abstraction.
+<div class="card-toc">
+
+- [1. Abstract Classes vs Interfaces (Java 8 to Java 21)](./1.5-abstraction-and-interfaces.md#1-abstract-classes-vs-interfaces-java-8-to-java-21)
+- [2. Evolution of Java Interfaces](./1.5-abstraction-and-interfaces.md#2-evolution-of-java-interfaces)
+  - [A. Default Methods (Java 8)](./1.5-abstraction-and-interfaces.md#a-default-methods-java-8)
+  - [B. Static Methods (Java 8)](./1.5-abstraction-and-interfaces.md#b-static-methods-java-8)
+  - [C. Private Methods (Java 9)](./1.5-abstraction-and-interfaces.md#c-private-methods-java-9)
+- [3. Resolving Multiple Interface Collisions](./1.5-abstraction-and-interfaces.md#3-resolving-multiple-interface-collisions)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F01-oops-concepts%2F1.5-abstraction-and-interfaces" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
@@ -107,7 +142,15 @@ Abstract classes vs Interfaces, modern interface evolution (default, static, and
 
 ### [1.6 SOLID Design Principles](./1.6-solid-principles.md)
 
-Deep-dive into SRP, OCP, LSP, ISP, and DIP with real-world enterprise Java examples and architectural anti-patterns to avoid.
+<div class="card-toc">
+
+- [1. Single Responsibility Principle (SRP)](./1.6-solid-principles.md#1-single-responsibility-principle-srp)
+- [2. Open / Closed Principle (OCP)](./1.6-solid-principles.md#2-open--closed-principle-ocp)
+- [3. Liskov Substitution Principle (LSP)](./1.6-solid-principles.md#3-liskov-substitution-principle-lsp)
+- [4. Interface Segregation Principle (ISP)](./1.6-solid-principles.md#4-interface-segregation-principle-isp)
+- [5. Dependency Inversion Principle (DIP)](./1.6-solid-principles.md#5-dependency-inversion-principle-dip)
+
+</div>
 
   <div class="card-actions">
     <a href="obsidian://open?vault=docs&file=core-java%2F01-oops-concepts%2F1.6-solid-principles" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
