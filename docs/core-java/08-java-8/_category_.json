@@ -1,0 +1,10 @@
+{
+  "label": "Chapter 8: Java 8 Features",
+  "position": 8,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "core-java/java-8/index"
+  }
+}

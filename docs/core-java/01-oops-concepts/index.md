@@ -158,11 +158,3 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 </div>
 
 </div>
-
----
-
-## 💡 Navigating Notes in Obsidian & Docusaurus
-
-1. In the Docusaurus sidebar, **Chapter 1: OOPs Concepts** is a collapsible dropdown containing all subtopics from `1.1` to `1.6`.
-2. In Obsidian, expand the `01-oops-concepts` folder inside `core-java` to browse and edit all notes in numerical order.
-3. Use the top breadcrumb in any subtopic note to quickly return to this Chapter 1 overview.

@@ -1,14 +1,14 @@
 ---
-title: "Chapter 2: Java Overview"
+title: "Chapter 2: Java Overview & Memory Model"
 sidebar_label: "Overview"
 sidebar_position: 1
 id: index
 slug: /core-java/java-overview
 ---
 
-# Chapter 2: Java Overview
+# Chapter 2: Java Overview & Memory Model
 
-Java is a mature, high-performance, object-oriented language designed with the "Write Once, Run Anywhere" (WORA) philosophy. Understanding its runtime architecture, execution pipeline, type system, and LTS feature evolution is foundational for modern backend engineering.
+Java is a mature, high-performance, object-oriented language designed with the "Write Once, Run Anywhere" (WORA) philosophy. Understanding its runtime architecture, execution pipeline, type system, root Object lifecycle contracts, and the Java Memory Model (JMM) is foundational for modern backend engineering.
 
 ---
 
@@ -152,12 +152,95 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
   </div>
 </div>
 
+<div class="subtopic-card card-cyan">
+  <div class="card-meta">
+    <span class="card-badge">Root Hierarchy</span>
+    <span class="card-step">2.7</span>
+  </div>
+  <div class="card-icon">👑</div>
+
+### [2.7 java.lang.Object Core Methods](./2.7-object-class-methods.md)
+
+<div class="card-toc">
+
+- [1. Summary of All 11 Methods](./2.7-object-class-methods.md#1-summary-of-all-11-methods)
+- [2. Shallow Copy vs Deep Copy with `clone()`](./2.7-object-class-methods.md#2-shallow-copy-vs-deep-copy-with-clone)
+
 </div>
 
----
+  <div class="card-actions">
+    <a href="obsidian://open?vault=docs&file=core-java%2F02-java-overview%2F2.7-object-class-methods" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
+  </div>
+</div>
 
-## 💡 Navigating Notes in Obsidian & Docusaurus
+<div class="subtopic-card card-purple">
+  <div class="card-meta">
+    <span class="card-badge">Object Equality</span>
+    <span class="card-step">2.8</span>
+  </div>
+  <div class="card-icon">⚖️</div>
 
-1. In the Docusaurus sidebar, **Chapter 2: Java Overview** is a collapsible dropdown containing all subtopics from `2.1` to `2.6`.
-2. In Obsidian, expand the `02-java-overview` folder inside `core-java` to browse and edit all notes in numerical order.
-3. Use the top breadcrumb in any subtopic note to quickly return to this Chapter 2 overview.
+### [2.8 The equals() & hashCode() Contract](./2.8-equals-and-hashcode-contract.md)
+
+<div class="card-toc">
+
+- [1. The Mathematical Contract](./2.8-equals-and-hashcode-contract.md#1-the-mathematical-contract)
+- [2. What Breaks If You Override `equals()` Without `hashCode()`?](./2.8-equals-and-hashcode-contract.md#2-what-breaks-if-you-override-equals-without-hashcode)
+  - [The Catastrophic Bug:](./2.8-equals-and-hashcode-contract.md#the-catastrophic-bug)
+- [3. Idiomatic Implementation with `java.util.Objects`](./2.8-equals-and-hashcode-contract.md#3-idiomatic-implementation-with-javautilobjects)
+
+</div>
+
+  <div class="card-actions">
+    <a href="obsidian://open?vault=docs&file=core-java%2F02-java-overview%2F2.8-equals-and-hashcode-contract" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
+  </div>
+</div>
+
+<div class="subtopic-card card-amber">
+  <div class="card-meta">
+    <span class="card-badge">Memory Layout</span>
+    <span class="card-step">2.9</span>
+  </div>
+  <div class="card-icon">🧠</div>
+
+### [2.9 JVM Memory Model Architecture](./2.9-jvm-memory-model-architecture.md)
+
+<div class="card-toc">
+
+- [1. JVM Runtime Data Areas Overview](./2.9-jvm-memory-model-architecture.md#1-jvm-runtime-data-areas-overview)
+- [2. Deep Dive: Memory Regions](./2.9-jvm-memory-model-architecture.md#2-deep-dive-memory-regions)
+  - [A. Java Heap](./2.9-jvm-memory-model-architecture.md#a-java-heap)
+  - [B. Thread Stack (JVM Stack)](./2.9-jvm-memory-model-architecture.md#b-thread-stack-jvm-stack)
+  - [C. Metaspace (Native Memory, Java 8+)](./2.9-jvm-memory-model-architecture.md#c-metaspace-native-memory-java-8)
+  - [D. Program Counter (PC) Register](./2.9-jvm-memory-model-architecture.md#d-program-counter-pc-register)
+
+</div>
+
+  <div class="card-actions">
+    <a href="obsidian://open?vault=docs&file=core-java%2F02-java-overview%2F2.9-jvm-memory-model-architecture" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
+  </div>
+</div>
+
+<div class="subtopic-card card-emerald">
+  <div class="card-meta">
+    <span class="card-badge">Concurrency & JMM</span>
+    <span class="card-step">2.10</span>
+  </div>
+  <div class="card-icon">⚡</div>
+
+### [2.10 JMM Concurrency, Volatile & Memory Barriers](./2.10-jmm-concurrency-and-volatile.md)
+
+<div class="card-toc">
+
+- [1. The Core Problem: Hardware Caches & Reordering](./2.10-jmm-concurrency-and-volatile.md#1-the-core-problem-hardware-caches--reordering)
+- [2. The `volatile` Keyword](./2.10-jmm-concurrency-and-volatile.md#2-the-volatile-keyword)
+- [3. The "Happens-Before" Relationship](./2.10-jmm-concurrency-and-volatile.md#3-the-happens-before-relationship)
+
+</div>
+
+  <div class="card-actions">
+    <a href="obsidian://open?vault=docs&file=core-java%2F02-java-overview%2F2.10-jmm-concurrency-and-volatile" class="card-btn btn-obsidian" title="Open in Obsidian App">🔮 Open in Obsidian</a>
+  </div>
+</div>
+
+</div>

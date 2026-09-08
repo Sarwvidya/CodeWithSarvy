@@ -15,7 +15,7 @@ export const learningTopics = [
     color: "#f59e0b",
     tag: "Backend Core",
     chaptersCount: "8 chapters",
-    description: "OOPs architecture, JVM internals, JMM, Strings, Exceptions, Collections, Multithreading & GC.",
+    description: "OOPs architecture, JVM internals, JMM, Strings, Exceptions, Collections, Multithreading, GC & Java 8.",
     graphic: "java",
     docCategory: "/docs/core-java/oops-concepts",
     chapters: [
@@ -26,38 +26,38 @@ export const learningTopics = [
       },
       {
         id: "ch2-overview",
-        title: "Chapter 2: Java Overview",
+        title: "Chapter 2: Java Overview & Memory Model",
         docPath: "/docs/core-java/java-overview"
       },
       {
-        id: "ch3-optional-jmm",
-        title: "Chapter 3: Optional, Object & JMM",
-        docPath: "/docs/core-java/optional-object-jmm"
-      },
-      {
-        id: "ch4-strings",
-        title: "Chapter 4: Strings in Java",
+        id: "ch3-strings",
+        title: "Chapter 3: Strings in Java",
         docPath: "/docs/core-java/strings"
       },
       {
-        id: "ch5-exceptions",
-        title: "Chapter 5: Exception Handling",
+        id: "ch4-exceptions",
+        title: "Chapter 4: Exception Handling",
         docPath: "/docs/core-java/exception-handling"
       },
       {
-        id: "ch6-collections",
-        title: "Chapter 6: Collections Framework",
+        id: "ch5-collections",
+        title: "Chapter 5: Collections Framework",
         docPath: "/docs/core-java/collections"
       },
       {
-        id: "ch7-multithreading",
-        title: "Chapter 7: Multithreading & Concurrency",
+        id: "ch6-multithreading",
+        title: "Chapter 6: Multithreading & Concurrency",
         docPath: "/docs/core-java/multithreading"
       },
       {
-        id: "ch8-gc-serialization",
-        title: "Chapter 8: GC & Serialization",
+        id: "ch7-gc-serialization",
+        title: "Chapter 7: GC & Serialization",
         docPath: "/docs/core-java/garbage-collection-and-serialization"
+      },
+      {
+        id: "ch8-java-8",
+        title: "Chapter 8: Java 8 Features",
+        docPath: "/docs/core-java/java-8"
       }
     ]
   },
