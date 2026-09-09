@@ -29,7 +29,8 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Complete Throwable Inheritance Tree](./4.1-exception-hierarchy.md#1-complete-throwable-inheritance-tree)
+- [What is Exception Handling?](./4.1-exception-hierarchy.md#what-is-exception-handling)
+- [Exception Hierarchy](./4.1-exception-hierarchy.md#exception-hierarchy)
 - [2. `Error` vs `Exception`](./4.1-exception-hierarchy.md#2-error-vs-exception)
 
 </div>
@@ -50,7 +51,7 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Architectural Comparison](./4.2-checked-vs-unchecked-exceptions.md#1-architectural-comparison)
+- [Difference Between Checked and Unchecked Exceptions](./4.2-checked-vs-unchecked-exceptions.md#difference-between-checked-and-unchecked-exceptions)
 - [2. When to Use Each in Real Systems](./4.2-checked-vs-unchecked-exceptions.md#2-when-to-use-each-in-real-systems)
   - [When to Use Checked Exceptions:](./4.2-checked-vs-unchecked-exceptions.md#when-to-use-checked-exceptions)
   - [When to Use Unchecked Exceptions:](./4.2-checked-vs-unchecked-exceptions.md#when-to-use-unchecked-exceptions)
@@ -73,9 +74,15 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Execution Flow Rules](./4.3-try-catch-finally-execution-flow.md#1-execution-flow-rules)
-- [2. Return Precedence Gotcha in `finally`](./4.3-try-catch-finally-execution-flow.md#2-return-precedence-gotcha-in-finally)
-- [3. When Will `finally` NOT Execute?](./4.3-try-catch-finally-execution-flow.md#3-when-will-finally-not-execute)
+- [Execution Flow Rules](./4.3-try-catch-finally-execution-flow.md#execution-flow-rules)
+- [Multiple Catch blocks](./4.3-try-catch-finally-execution-flow.md#multiple-catch-blocks)
+  - [Important rule](./4.3-try-catch-finally-execution-flow.md#important-rule)
+- [finally](./4.3-try-catch-finally-execution-flow.md#finally)
+- [Can we have try without catch?](./4.3-try-catch-finally-execution-flow.md#can-we-have-try-without-catch)
+- [Can finally be skipped?](./4.3-try-catch-finally-execution-flow.md#can-finally-be-skipped)
+- [throw keyword](./4.3-try-catch-finally-execution-flow.md#throw-keyword)
+- [throws](./4.3-try-catch-finally-execution-flow.md#throws)
+- [throw vs throws](./4.3-try-catch-finally-execution-flow.md#throw-vs-throws)
 
 </div>
 
@@ -95,13 +102,12 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
+- [try-with-resources](./4.4-try-with-resources.md#try-with-resources)
 - [1. The Legacy Problem vs Try-with-Resources](./4.4-try-with-resources.md#1-the-legacy-problem-vs-try-with-resources)
   - [Legacy Java 6 Cleanup (Clunky & Prone to Leakage):](./4.4-try-with-resources.md#legacy-java-6-cleanup-clunky--prone-to-leakage)
   - [Modern Try-with-Resources:](./4.4-try-with-resources.md#modern-try-with-resources)
-- [2. The `AutoCloseable` Interface Contract](./4.4-try-with-resources.md#2-the-autocloseable-interface-contract)
-  - [Custom Resource Example:](./4.4-try-with-resources.md#custom-resource-example)
   - [Closing Order Rule](./4.4-try-with-resources.md#closing-order-rule)
-- [3. Suppressed Exceptions](./4.4-try-with-resources.md#3-suppressed-exceptions)
+- [Suppressed Exceptions](./4.4-try-with-resources.md#suppressed-exceptions)
 
 </div>
 
@@ -121,9 +127,12 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Crafting Domain-Specific Custom Exceptions](./4.5-custom-exceptions-and-best-practices.md#1-crafting-domain-specific-custom-exceptions)
-- [2. Exception Chaining: Preserving Root Causes](./4.5-custom-exceptions-and-best-practices.md#2-exception-chaining-preserving-root-causes)
-- [3. Top 5 Enterprise Exception Best Practices](./4.5-custom-exceptions-and-best-practices.md#3-top-5-enterprise-exception-best-practices)
+- [Why use custom exceptions?](./4.5-custom-exceptions-and-best-practices.md#why-use-custom-exceptions)
+- [Custom checked vs unchecked exception](./4.5-custom-exceptions-and-best-practices.md#custom-checked-vs-unchecked-exception)
+  - [Which one is usually preferred in Spring Boot?](./4.5-custom-exceptions-and-best-practices.md#which-one-is-usually-preferred-in-spring-boot)
+- [Why we should not use `Exception` everywhere?](./4.5-custom-exceptions-and-best-practices.md#why-we-should-not-use-exception-everywhere)
+- [Why @RestControllerAdvice?](./4.5-custom-exceptions-and-best-practices.md#why-restcontrolleradvice)
+- [@ExceptionHandler](./4.5-custom-exceptions-and-best-practices.md#exceptionhandler)
 
 </div>
 

@@ -195,20 +195,20 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. The Problem with Standard Collections Under Concurrency](./6.7-thread-safe-collections.md#1-the-problem-with-standard-collections-under-concurrency)
-- [2. Legacy Synchronized Collections (`java.util`)](./6.7-thread-safe-collections.md#2-legacy-synchronized-collections-javautil)
-  - [2.1 `Vector` and `Hashtable` (Legacy)](./6.7-thread-safe-collections.md#21-vector-and-hashtable-legacy)
-  - [2.2 `Collections.synchronizedList()` & `Collections.synchronizedMap()`](./6.7-thread-safe-collections.md#22-collectionssynchronizedlist--collectionssynchronizedmap)
-- [3. Modern Concurrent Collections (`java.util.concurrent`)](./6.7-thread-safe-collections.md#3-modern-concurrent-collections-javautilconcurrent)
-  - [3.1 `ConcurrentHashMap`](./6.7-thread-safe-collections.md#31-concurrenthashmap)
-- [4. Copy-On-Write Collections](./6.7-thread-safe-collections.md#4-copy-on-write-collections)
-  - [4.1 `CopyOnWriteArrayList` & `CopyOnWriteArraySet`](./6.7-thread-safe-collections.md#41-copyonwritearraylist--copyonwritearrayset)
-- [5. Concurrent Queues & Deques](./6.7-thread-safe-collections.md#5-concurrent-queues--deques)
-  - [5.1 Blocking Queues (`BlockingQueue`)](./6.7-thread-safe-collections.md#51-blocking-queues-blockingqueue)
-  - [5.2 Non-Blocking Lock-Free Queues (`ConcurrentLinkedQueue`)](./6.7-thread-safe-collections.md#52-non-blocking-lock-free-queues-concurrentlinkedqueue)
-- [6. Sorted Concurrent Collections](./6.7-thread-safe-collections.md#6-sorted-concurrent-collections)
-  - [6.1 `ConcurrentSkipListMap` & `ConcurrentSkipListSet`](./6.7-thread-safe-collections.md#61-concurrentskiplistmap--concurrentskiplistset)
-- [7. Collection Selection Matrix](./6.7-thread-safe-collections.md#7-collection-selection-matrix)
+- [What are thread-safe collection?](./6.7-thread-safe-collections.md#what-are-thread-safe-collection)
+- [Thread-Safe collection and Corresponding normal collection](./6.7-thread-safe-collections.md#thread-safe-collection-and-corresponding-normal-collection)
+- [CopyOnWriteArrayList ("ArrayList")](./6.7-thread-safe-collections.md#copyonwritearraylist-arraylist)
+  - [When to use `CopyOnWriteArrayList`?](./6.7-thread-safe-collections.md#when-to-use-copyonwritearraylist)
+- [ConcurrentHashMap ("Hashmap")](./6.7-thread-safe-collections.md#concurrenthashmap-hashmap)
+- [CopyOnWriteArraySet ("HashSet")](./6.7-thread-safe-collections.md#copyonwritearrayset-hashset)
+- [ConcurrentSkipListMap ("TreeMap")](./6.7-thread-safe-collections.md#concurrentskiplistmap-treemap)
+- [ConcurrentSkipListSet ("TreeSet")](./6.7-thread-safe-collections.md#concurrentskiplistset-treeset)
+- [ConcurrentLinkedQueue ("LinkedList")](./6.7-thread-safe-collections.md#concurrentlinkedqueue-linkedlist)
+- [ConcurrentLinkedDeque ("ArrayDeque")](./6.7-thread-safe-collections.md#concurrentlinkeddeque-arraydeque)
+- [What about Vector?](./6.7-thread-safe-collections.md#what-about-vector)
+  - [Problem with Vector](./6.7-thread-safe-collections.md#problem-with-vector)
+- [Collections.synchronizedList()](./6.7-thread-safe-collections.md#collectionssynchronizedlist)
+  - [Problem with Synchronized Collection](./6.7-thread-safe-collections.md#problem-with-synchronized-collection)
 
 </div>
 
