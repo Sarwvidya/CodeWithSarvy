@@ -29,15 +29,19 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. What is a Lambda Expression?](./8.1-lambda-expressions.md#1-what-is-a-lambda-expression)
-- [2. Syntax Variations](./8.1-lambda-expressions.md#2-syntax-variations)
-- [3. Anonymous Inner Class vs Lambda Expression](./8.1-lambda-expressions.md#3-anonymous-inner-class-vs-lambda-expression)
-  - [Legacy Anonymous Inner Class:](./8.1-lambda-expressions.md#legacy-anonymous-inner-class)
-  - [Modern Java 8 Lambda:](./8.1-lambda-expressions.md#modern-java-8-lambda)
-- [4. Capturing Variables: Effectively Final Rule](./8.1-lambda-expressions.md#4-capturing-variables-effectively-final-rule)
-  - [Effectively Final Concept:](./8.1-lambda-expressions.md#effectively-final-concept)
-- [5. Practical Examples](./8.1-lambda-expressions.md#5-practical-examples)
-  - [Sorting a Collection:](./8.1-lambda-expressions.md#sorting-a-collection)
+- [What is a Lambda Expression?](./8.1-lambda-expressions.md#what-is-a-lambda-expression)
+- [Different Lambda forms](./8.1-lambda-expressions.md#different-lambda-forms)
+  - [No/Zero Parameter](./8.1-lambda-expressions.md#nozero-parameter)
+  - [Single Parameter](./8.1-lambda-expressions.md#single-parameter)
+  - [Multiple Parameters](./8.1-lambda-expressions.md#multiple-parameters)
+  - [Multiple Parameters with Inferred Types](./8.1-lambda-expressions.md#multiple-parameters-with-inferred-types)
+  - [Multi-line Body](./8.1-lambda-expressions.md#multi-line-body)
+- [Lambda does NOT have a type by itself](./8.1-lambda-expressions.md#lambda-does-not-have-a-type-by-itself)
+- [Why Functional Interface is required](./8.1-lambda-expressions.md#why-functional-interface-is-required)
+- [Lambda and Variable Scope](./8.1-lambda-expressions.md#lambda-and-variable-scope)
+  - [What does effectively final mean?](./8.1-lambda-expressions.md#what-does-effectively-final-mean)
+- [Modern Java 8 Lambda:](./8.1-lambda-expressions.md#modern-java-8-lambda)
+- [Version wise updates](./8.1-lambda-expressions.md#version-wise-updates)
 
 </div>
 
@@ -57,9 +61,13 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. The `@FunctionalInterface` Annotation](./8.2-functional-interfaces.md#1-the-functionalinterface-annotation)
-- [2. Core Built-In Functional Interfaces (`java.util.function`)](./8.2-functional-interfaces.md#2-core-built-in-functional-interfaces-javautilfunction)
-- [3. Deep Dive into Core Interfaces](./8.2-functional-interfaces.md#3-deep-dive-into-core-interfaces)
+- [What is a Functional Interface?](./8.2-functional-interfaces.md#what-is-a-functional-interface)
+- [Why do we need Functional Interface?](./8.2-functional-interfaces.md#why-do-we-need-functional-interface)
+- [Why exactly ONE abstract method?](./8.2-functional-interfaces.md#why-exactly-one-abstract-method)
+- [But can Functional Interface have other methods?](./8.2-functional-interfaces.md#but-can-functional-interface-have-other-methods)
+- [What is @FunctionalInterface?](./8.2-functional-interfaces.md#what-is-functionalinterface)
+  - [Is @FunctionalInterface mandatory?](./8.2-functional-interfaces.md#is-functionalinterface-mandatory)
+- [Common Functional Interfaces provided by Java](./8.2-functional-interfaces.md#common-functional-interfaces-provided-by-java)
   - [1. `Predicate<T>`](./8.2-functional-interfaces.md#1-predicatet)
   - [2. `Function<T, R>`](./8.2-functional-interfaces.md#2-functiont-r)
   - [3. `Consumer<T>`](./8.2-functional-interfaces.md#3-consumert)
@@ -86,14 +94,14 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. What is a Method Reference?](./8.3-method-references.md#1-what-is-a-method-reference)
-- [2. Four Kinds of Method References](./8.3-method-references.md#2-four-kinds-of-method-references)
-- [3. Detailed Breakdown & Code Examples](./8.3-method-references.md#3-detailed-breakdown--code-examples)
-  - [1. Reference to a Static Method](./8.3-method-references.md#1-reference-to-a-static-method)
-  - [2. Reference to an Instance Method of a Particular Object](./8.3-method-references.md#2-reference-to-an-instance-method-of-a-particular-object)
-  - [3. Reference to an Instance Method of an Arbitrary Object of a Specific Type](./8.3-method-references.md#3-reference-to-an-instance-method-of-an-arbitrary-object-of-a-specific-type)
-  - [4. Reference to a Constructor](./8.3-method-references.md#4-reference-to-a-constructor)
-- [4. Lambda vs Method Reference: When to Use What?](./8.3-method-references.md#4-lambda-vs-method-reference-when-to-use-what)
+- [What is a Method Reference?](./8.3-method-references.md#what-is-a-method-reference)
+- [Why was Method Reference introduced?](./8.3-method-references.md#why-was-method-reference-introduced)
+- [Four Kinds of Method References](./8.3-method-references.md#four-kinds-of-method-references)
+  - [1. Reference to a `Static Method`](./8.3-method-references.md#1-reference-to-a-static-method)
+  - [2. Reference to an `Instance Method of a Particular Object`](./8.3-method-references.md#2-reference-to-an-instance-method-of-a-particular-object)
+  - [3. Reference to an `Instance Method of an Arbitrary Object of a Specific Type`](./8.3-method-references.md#3-reference-to-an-instance-method-of-an-arbitrary-object-of-a-specific-type)
+  - [4. Reference to a `Constructor`](./8.3-method-references.md#4-reference-to-a-constructor)
+- [Lambda vs Method Reference: When to Use What?](./8.3-method-references.md#lambda-vs-method-reference-when-to-use-what)
 
 </div>
 
@@ -113,14 +121,15 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Streams vs Collections](./8.4-stream-api.md#1-streams-vs-collections)
-- [2. Anatomy of a Stream Pipeline](./8.4-stream-api.md#2-anatomy-of-a-stream-pipeline)
-  - [1. Creating Streams (Source):](./8.4-stream-api.md#1-creating-streams-source)
-- [3. Intermediate Operations (Lazy)](./8.4-stream-api.md#3-intermediate-operations-lazy)
+- [What is Streams?](./8.4-stream-api.md#what-is-streams)
+- [Why was Stream API introduced?](./8.4-stream-api.md#why-was-stream-api-introduced)
+- [Streams vs Collections](./8.4-stream-api.md#streams-vs-collections)
+- [Stream Pipeline](./8.4-stream-api.md#stream-pipeline)
+- [Intermediate Operations (Lazy)](./8.4-stream-api.md#intermediate-operations-lazy)
   - [`map()` vs `flatMap()`:](./8.4-stream-api.md#map-vs-flatmap)
-- [4. Terminal Operations (Eager)](./8.4-stream-api.md#4-terminal-operations-eager)
-- [5. Collectors & Grouping (`java.util.stream.Collectors`)](./8.4-stream-api.md#5-collectors--grouping-javautilstreamcollectors)
-- [6. Parallel Streams](./8.4-stream-api.md#6-parallel-streams)
+- [Terminal Operations (Eager)](./8.4-stream-api.md#terminal-operations-eager)
+- [Version wise Updates](./8.4-stream-api.md#version-wise-updates)
+- [Parallel Streams (Multithreading)](./8.4-stream-api.md#parallel-streams-multithreading)
 
 </div>
 
@@ -140,10 +149,12 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Creating Optional Instances](./8.5-optional-class.md#1-creating-optional-instances)
-- [2. Functional Transformation Pipeline](./8.5-optional-class.md#2-functional-transformation-pipeline)
-- [3. `orElse()` vs `orElseGet()`: A Costly Trap](./8.5-optional-class.md#3-orelse-vs-orelseget-a-costly-trap)
-- [4. Critical Anti-Patterns to Avoid](./8.5-optional-class.md#4-critical-anti-patterns-to-avoid)
+- [What is Optional Class?](./8.5-optional-class.md#what-is-optional-class)
+- [Creating Optional Instances](./8.5-optional-class.md#creating-optional-instances)
+  - [`Optional.of()`](./8.5-optional-class.md#optionalof)
+  - [`Optional.ofNullable()`](./8.5-optional-class.md#optionalofnullable)
+  - [`Optional.empty()`](./8.5-optional-class.md#optionalempty)
+- [Optional class method](./8.5-optional-class.md#optional-class-method)
 
 </div>
 
