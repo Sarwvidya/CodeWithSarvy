@@ -2,7 +2,7 @@
   "label": "Chapter 1: OOPs Concepts",
   "position": 1,
   "collapsible": true,
-  "collapsed": false,
+  "collapsed": true,
   "link": {
     "type": "doc",
     "id": "core-java/oops-concepts/index"

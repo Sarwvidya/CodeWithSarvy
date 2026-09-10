@@ -29,8 +29,21 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Why is String Immutable in Java?](./3.1-string-immutability-and-scp.md#1-why-is-string-immutable-in-java)
-- [2. The String Constant Pool (SCP) Architecture](./3.1-string-immutability-and-scp.md#2-the-string-constant-pool-scp-architecture)
+- [What is a String in Java?](./3.1-string-immutability-and-scp.md#what-is-a-string-in-java)
+- [Two ways to create a String](./3.1-string-immutability-and-scp.md#two-ways-to-create-a-string)
+  - [Method 1: String literal](./3.1-string-immutability-and-scp.md#method-1-string-literal)
+  - [Method 2: Using new](./3.1-string-immutability-and-scp.md#method-2-using-new)
+  - [Important](./3.1-string-immutability-and-scp.md#important)
+- [What is String Pool?](./3.1-string-immutability-and-scp.md#what-is-string-pool)
+- [Why is String immutable?](./3.1-string-immutability-and-scp.md#why-is-string-immutable)
+- [Why is String immutable?](./3.1-string-immutability-and-scp.md#why-is-string-immutable-1)
+  - [1. String Pool](./3.1-string-immutability-and-scp.md#1-string-pool)
+  - [2. Security](./3.1-string-immutability-and-scp.md#2-security)
+  - [3. Thread safety](./3.1-string-immutability-and-scp.md#3-thread-safety)
+  - [4. HashMap / HashSet](./3.1-string-immutability-and-scp.md#4-hashmap--hashset)
+  - [5. == vs equals()](./3.1-string-immutability-and-scp.md#5--vs-equals)
+- [What happens with `+`?](./3.1-string-immutability-and-scp.md#what-happens-with-)
+- [Example of String Constant Pool Memory Model](./3.1-string-immutability-and-scp.md#example-of-string-constant-pool-memory-model)
 
 </div>
 
@@ -50,8 +63,10 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Feature Comparison Matrix](./3.2-string-vs-stringbuilder-vs-stringbuffer.md#1-feature-comparison-matrix)
-- [2. The String Concatenation Anti-Pattern in Loops](./3.2-string-vs-stringbuilder-vs-stringbuffer.md#2-the-string-concatenation-anti-pattern-in-loops)
+- [StringBuilder](./3.2-string-vs-stringbuilder-vs-stringbuffer.md#stringbuilder)
+- [StringBuffer](./3.2-string-vs-stringbuilder-vs-stringbuffer.md#stringbuffer)
+- [Major Differences](./3.2-string-vs-stringbuilder-vs-stringbuffer.md#major-differences)
+- [String vs StringBuilder vs StringBuffer](./3.2-string-vs-stringbuilder-vs-stringbuffer.md#string-vs-stringbuilder-vs-stringbuffer)
 
 </div>
 
@@ -71,9 +86,17 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. `==` vs `.equals()` vs `.compareTo()`](./3.3-string-comparison-and-interning.md#1--vs-equals-vs-compareto)
-- [2. Compile-Time Literal Folding](./3.3-string-comparison-and-interning.md#2-compile-time-literal-folding)
-- [3. The `.intern()` Method](./3.3-string-comparison-and-interning.md#3-the-intern-method)
+- [`==` vs `.equals()` vs `.compareTo()`](./3.3-string-comparison-and-interning.md#-vs-equals-vs-compareto)
+- [Compile-Time Literal Folding](./3.3-string-comparison-and-interning.md#compile-time-literal-folding)
+- [`.intern()`](./3.3-string-comparison-and-interning.md#intern)
+- [Common String methods](./3.3-string-comparison-and-interning.md#common-string-methods)
+  - [`length()`](./3.3-string-comparison-and-interning.md#length)
+  - [`charAt()`](./3.3-string-comparison-and-interning.md#charat)
+  - [`substring()`](./3.3-string-comparison-and-interning.md#substring)
+  - [`toUpperCase()` / `toLowerCase()`](./3.3-string-comparison-and-interning.md#touppercase--tolowercase)
+  - [`equals()` vs `equalsIgnoreCase()`](./3.3-string-comparison-and-interning.md#equals-vs-equalsignorecase)
+  - [`compareTo()`](./3.3-string-comparison-and-interning.md#compareto)
+- [String and `final`](./3.3-string-comparison-and-interning.md#string-and-final)
 
 </div>
 
