@@ -1,0 +1,10 @@
+{
+  "label": "Chapter 4: Exception Handling, Logging & Production Support",
+  "position": 4,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "spring-boot/exception-handling-and-logging/index"
+  }
+}

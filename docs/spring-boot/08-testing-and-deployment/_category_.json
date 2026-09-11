@@ -1,0 +1,10 @@
+{
+  "label": "Chapter 8: Testing, Deployment & Production-Ready Spring Boot",
+  "position": 8,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "spring-boot/testing-and-deployment/index"
+  }
+}

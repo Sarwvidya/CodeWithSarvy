@@ -1,0 +1,10 @@
+{
+  "label": "Chapter 2: Spring Beans & Dependency Injection",
+  "position": 2,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "spring-boot/spring-beans-and-di/index"
+  }
+}

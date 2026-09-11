@@ -72,9 +72,6 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
   - [2. `Function<T, R>`](./8.2-functional-interfaces.md#2-functiont-r)
   - [3. `Consumer<T>`](./8.2-functional-interfaces.md#3-consumert)
   - [4. `Supplier<T>`](./8.2-functional-interfaces.md#4-suppliert)
-- [4. Binary Variants & Primitive Specializations](./8.2-functional-interfaces.md#4-binary-variants--primitive-specializations)
-  - [Two-Argument Interfaces:](./8.2-functional-interfaces.md#two-argument-interfaces)
-  - [Primitive Specializations (High Performance):](./8.2-functional-interfaces.md#primitive-specializations-high-performance)
 
 </div>
 

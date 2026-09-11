@@ -1126,7 +1126,8 @@ html.docs-doc-page .main-wrapper,
    JavaScript Fundamentals Hub - Subtopic Cards & Obsidian Links
    ========================================================================== */
 .js-fundamentals-grid,
-.core-java-grid {
+.core-java-grid,
+.spring-boot-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 22px;

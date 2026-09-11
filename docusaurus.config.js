@@ -101,7 +101,7 @@ const config = {
               },
               {
                 label: 'Spring Boot',
-                to: '/docs/spring-boot/spring-core-ioc',
+                to: '/docs/spring-boot/spring-fundamentals',
               },
               {
                 label: 'React.js',

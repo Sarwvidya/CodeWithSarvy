@@ -1,0 +1,10 @@
+{
+  "label": "Chapter 5: Spring Data JPA, Hibernate & Database",
+  "position": 5,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "spring-boot/spring-data-jpa-and-hibernate/index"
+  }
+}

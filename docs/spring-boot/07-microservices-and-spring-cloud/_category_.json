@@ -1,0 +1,10 @@
+{
+  "label": "Chapter 7: Microservices & Spring Cloud",
+  "position": 7,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "spring-boot/microservices-and-spring-cloud/index"
+  }
+}

@@ -20,7 +20,7 @@ Explore in-depth chapters across 6 core domains:
 
 - [**Core Java**](/docs/core-java/oops-concepts) (OOPs Concepts, Java Overview, Optional & JMM, Strings, Exception Handling, Collections Framework, Multithreading & Concurrency, Garbage Collection & Serialization)
 - [**DSA & Algorithms**](/docs/dsa/time-space-complexity) (Big-O, Sliding Window, Trees, Graphs, Dynamic Programming)
-- [**Spring Boot & Microservices**](/docs/spring-boot/spring-core-ioc) (IoC, RESTful APIs, Spring Data JPA, Security 6 JWT, Kafka)
+- [**Spring Boot & Microservices**](/docs/spring-boot/spring-fundamentals) (IoC & DI, RESTful APIs, Spring Data JPA, Security 6, Microservices, Cloud & Production Deployment)
 - [**React & Frontend**](/docs/react/javascript-fundamentals) (JavaScript Fundamentals, Modern ES6+, Closures, Async, Virtual DOM)
 - [**System Design & Databases**](/docs/system-design/sql-indexing) (SQL Indexing, Redis Caching, Load Balancing, CAP Theorem)
 - [**DevOps & Tools**](/docs/devops/git-workflows) (Git Rebasing, Docker Multi-Stage, GitHub Actions CI/CD, Linux)

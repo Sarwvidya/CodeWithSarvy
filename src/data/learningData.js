@@ -83,15 +83,50 @@ export const learningTopics = [
     title: "Spring Boot & Microservices",
     color: "#10b981",
     tag: "Enterprise",
-    chaptersCount: "1 chapter",
-    description: "Inversion of Control, Dependency Injection, and enterprise patterns.",
+    chaptersCount: "8 chapters",
+    description: "Spring fundamentals, IoC & DI, REST APIs, Global Exceptions, Spring Data JPA, Security 6, Microservices & Production Deployment.",
     graphic: "spring",
-    docCategory: "/docs/category/spring-boot--microservices",
+    docCategory: "/docs/spring-boot/spring-fundamentals",
     chapters: [
       {
-        id: "spring-core",
-        title: "Spring Core & Inversion of Control",
-        docPath: "/docs/spring-boot/spring-core-ioc"
+        id: "ch1-fundamentals",
+        title: "Chapter 1: Spring & Spring Boot Fundamentals",
+        docPath: "/docs/spring-boot/spring-fundamentals"
+      },
+      {
+        id: "ch2-beans-di",
+        title: "Chapter 2: Spring Beans & Dependency Injection",
+        docPath: "/docs/spring-boot/spring-beans-and-di"
+      },
+      {
+        id: "ch3-rest-api",
+        title: "Chapter 3: REST API & Web Layer",
+        docPath: "/docs/spring-boot/rest-api-and-web-layer"
+      },
+      {
+        id: "ch4-exceptions-logging",
+        title: "Chapter 4: Exception Handling, Logging & Production Support",
+        docPath: "/docs/spring-boot/exception-handling-and-logging"
+      },
+      {
+        id: "ch5-jpa-hibernate",
+        title: "Chapter 5: Spring Data JPA, Hibernate & Database",
+        docPath: "/docs/spring-boot/spring-data-jpa-and-hibernate"
+      },
+      {
+        id: "ch6-security-auth",
+        title: "Chapter 6: Spring Security & Authentication",
+        docPath: "/docs/spring-boot/spring-security-and-auth"
+      },
+      {
+        id: "ch7-microservices-cloud",
+        title: "Chapter 7: Microservices & Spring Cloud",
+        docPath: "/docs/spring-boot/microservices-and-spring-cloud"
+      },
+      {
+        id: "ch8-testing-deployment",
+        title: "Chapter 8: Testing, Deployment & Production-Ready Spring Boot",
+        docPath: "/docs/spring-boot/testing-and-deployment"
       }
     ]
   },
