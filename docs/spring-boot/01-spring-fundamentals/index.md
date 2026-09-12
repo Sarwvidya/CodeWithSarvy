@@ -79,9 +79,11 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. How @EnableAutoConfiguration Operates](./1.3-auto-configuration-and-conditions.md#1-how-enableautoconfiguration-operates)
-- [2. Spring Boot 3 AutoConfiguration.imports](./1.3-auto-configuration-and-conditions.md#2-spring-boot-3-autoconfigurationimports)
-- [3. Conditional Annotations Deep Dive](./1.3-auto-configuration-and-conditions.md#3-conditional-annotations-deep-dive)
+- [What is Auto-Configuration?](./1.3-auto-configuration-and-conditions.md#what-is-auto-configuration)
+- [Does Auto-Configuration mean Spring Boot does everything automatically?](./1.3-auto-configuration-and-conditions.md#does-auto-configuration-mean-spring-boot-does-everything-automatically)
+- [How @EnableAutoConfiguration Operates](./1.3-auto-configuration-and-conditions.md#how-enableautoconfiguration-operates)
+- [Spring Boot 3 AutoConfiguration.imports](./1.3-auto-configuration-and-conditions.md#spring-boot-3-autoconfigurationimports)
+- [Conditional Annotations Deep Dive](./1.3-auto-configuration-and-conditions.md#conditional-annotations-deep-dive)
   - [Code Example: Custom Auto-Configuration](./1.3-auto-configuration-and-conditions.md#code-example-custom-auto-configuration)
 
 </div>
@@ -102,11 +104,14 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Anatomy of @SpringBootApplication](./1.4-application-startup-and-internals.md#1-anatomy-of-springbootapplication)
-- [2. SpringApplication.run() Execution Flow](./1.4-application-startup-and-internals.md#2-springapplicationrun-execution-flow)
-- [3. FailureAnalyzers and Custom Listeners](./1.4-application-startup-and-internals.md#3-failureanalyzers-and-custom-listeners)
-  - [FailureAnalyzers](./1.4-application-startup-and-internals.md#failureanalyzers)
-  - [ApplicationRunner vs CommandLineRunner](./1.4-application-startup-and-internals.md#applicationrunner-vs-commandlinerunner)
+- [Anatomy of @SpringBootApplication](./1.4-application-startup-and-internals.md#anatomy-of-springbootapplication)
+  - [`@SpringBootConfiguration`](./1.4-application-startup-and-internals.md#springbootconfiguration)
+  - [`@EnableAutoConfiguration`](./1.4-application-startup-and-internals.md#enableautoconfiguration)
+  - [`@ComponentScan`](./1.4-application-startup-and-internals.md#componentscan)
+- [Spring Boot application start Flow](./1.4-application-startup-and-internals.md#spring-boot-application-start-flow)
+- [What is Embedded Tomcat?](./1.4-application-startup-and-internals.md#what-is-embedded-tomcat)
+- [What is application.properties?](./1.4-application-startup-and-internals.md#what-is-applicationproperties)
+- [application.properties vs application.yml](./1.4-application-startup-and-internals.md#applicationproperties-vs-applicationyml)
 
 </div>
 
@@ -126,10 +131,11 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Configuration Precedence Matrix](./1.5-externalized-configuration-and-profiles.md#1-configuration-precedence-matrix)
-- [2. @Value vs @ConfigurationProperties](./1.5-externalized-configuration-and-profiles.md#2-value-vs-configurationproperties)
+- [@Value vs @ConfigurationProperties](./1.5-externalized-configuration-and-profiles.md#value-vs-configurationproperties)
   - [Type-Safe Configuration Example (Java Record)](./1.5-externalized-configuration-and-profiles.md#type-safe-configuration-example-java-record)
-- [3. Environment Profiles Management](./1.5-externalized-configuration-and-profiles.md#3-environment-profiles-management)
+- [What are Spring Profiles?](./1.5-externalized-configuration-and-profiles.md#what-are-spring-profiles)
+- [Why are Profiles important?](./1.5-externalized-configuration-and-profiles.md#why-are-profiles-important)
+- [Environment Profiles Management](./1.5-externalized-configuration-and-profiles.md#environment-profiles-management)
   - [Activating Profiles:](./1.5-externalized-configuration-and-profiles.md#activating-profiles)
   - [Conditional Beans per Profile](./1.5-externalized-configuration-and-profiles.md#conditional-beans-per-profile)
 

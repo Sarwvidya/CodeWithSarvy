@@ -29,10 +29,15 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Stereotype Annotations Hierarchy](./2.1-bean-stereotypes-and-component-scan.md#1-stereotype-annotations-hierarchy)
-  - [Purpose of Each Layer:](./2.1-bean-stereotypes-and-component-scan.md#purpose-of-each-layer)
-- [2. @Configuration and @Bean Mechanics](./2.1-bean-stereotypes-and-component-scan.md#2-configuration-and-bean-mechanics)
-- [3. Component Scanning Mechanics](./2.1-bean-stereotypes-and-component-scan.md#3-component-scanning-mechanics)
+- [What is a Spring Bean?](./2.1-bean-stereotypes-and-component-scan.md#what-is-a-spring-bean)
+- [Stereotype Annotations Hierarchy](./2.1-bean-stereotypes-and-component-scan.md#stereotype-annotations-hierarchy)
+  - [**`@Component`**](./2.1-bean-stereotypes-and-component-scan.md#component)
+  - [**`@Service`**](./2.1-bean-stereotypes-and-component-scan.md#service)
+  - [**`@Repository`**](./2.1-bean-stereotypes-and-component-scan.md#repository)
+  - [**`@Controller`**](./2.1-bean-stereotypes-and-component-scan.md#controller)
+  - [**`@RestController`**](./2.1-bean-stereotypes-and-component-scan.md#restcontroller)
+- [@Configuration and @Bean Mechanics](./2.1-bean-stereotypes-and-component-scan.md#configuration-and-bean-mechanics)
+- [Component Scanning Mechanics](./2.1-bean-stereotypes-and-component-scan.md#component-scanning-mechanics)
 
 </div>
 
@@ -52,14 +57,11 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. The Three Forms of Injection](./2.2-dependency-injection-and-wiring.md#1-the-three-forms-of-injection)
+- [What is Dependency Injection?](./2.2-dependency-injection-and-wiring.md#what-is-dependency-injection)
+- [Without Dependency Injection](./2.2-dependency-injection-and-wiring.md#without-dependency-injection)
+- [With Dependency Injection](./2.2-dependency-injection-and-wiring.md#with-dependency-injection)
+- [The Three Forms of Injection](./2.2-dependency-injection-and-wiring.md#the-three-forms-of-injection)
   - [A. Constructor Injection (Industry Best Practice)](./2.2-dependency-injection-and-wiring.md#a-constructor-injection-industry-best-practice)
-  - [B. Setter Injection (For Optional Dependencies)](./2.2-dependency-injection-and-wiring.md#b-setter-injection-for-optional-dependencies)
-  - [C. Field Injection (Discouraged / Anti-Pattern)](./2.2-dependency-injection-and-wiring.md#c-field-injection-discouraged--anti-pattern)
-- [2. Why Field Injection is an Anti-Pattern](./2.2-dependency-injection-and-wiring.md#2-why-field-injection-is-an-anti-pattern)
-- [3. Circular Dependencies & Resolution](./2.2-dependency-injection-and-wiring.md#3-circular-dependencies--resolution)
-  - [What Happens in Spring Boot?](./2.2-dependency-injection-and-wiring.md#what-happens-in-spring-boot)
-  - [Production Fixes:](./2.2-dependency-injection-and-wiring.md#production-fixes)
 
 </div>
 
