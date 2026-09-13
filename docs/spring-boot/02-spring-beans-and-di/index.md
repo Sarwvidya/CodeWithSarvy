@@ -30,8 +30,11 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 <div class="card-toc">
 
 - [What is a Spring Bean?](./2.1-bean-stereotypes-and-component-scan.md#what-is-a-spring-bean)
+- [`@Component` vs `@bean`](./2.1-bean-stereotypes-and-component-scan.md#component-vs-bean)
+  - [`@Component`](./2.1-bean-stereotypes-and-component-scan.md#component)
+  - [`@Bean`](./2.1-bean-stereotypes-and-component-scan.md#bean)
 - [Stereotype Annotations Hierarchy](./2.1-bean-stereotypes-and-component-scan.md#stereotype-annotations-hierarchy)
-  - [**`@Component`**](./2.1-bean-stereotypes-and-component-scan.md#component)
+  - [**`@Component`**](./2.1-bean-stereotypes-and-component-scan.md#component-1)
   - [**`@Service`**](./2.1-bean-stereotypes-and-component-scan.md#service)
   - [**`@Repository`**](./2.1-bean-stereotypes-and-component-scan.md#repository)
   - [**`@Controller`**](./2.1-bean-stereotypes-and-component-scan.md#controller)
@@ -90,14 +93,18 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. What is Autowiring?](./2.3-autowiring.md#1-what-is-autowiring)
+- [What is Autowiring?](./2.3-autowiring.md#what-is-autowiring)
+  - [What does @Autowired do?](./2.3-autowiring.md#what-does-autowired-do)
   - [Dependency Injection vs Autowiring](./2.3-autowiring.md#dependency-injection-vs-autowiring)
   - [The Autowiring Process](./2.3-autowiring.md#the-autowiring-process)
-- [2. Where Can `@Autowired` Be Used?](./2.3-autowiring.md#2-where-can-autowired-be-used)
-  - [A. Constructor Injection (Recommended)](./2.3-autowiring.md#a-constructor-injection-recommended)
-  - [B. Setter / Method Injection](./2.3-autowiring.md#b-setter--method-injection)
-  - [C. Field Injection (Discouraged Anti-Pattern)](./2.3-autowiring.md#c-field-injection-discouraged-anti-pattern)
-- [3. How Spring Resolves Autowired Beans Under the Hood](./2.3-autowiring.md#3-how-spring-resolves-autowired-beans-under-the-hood)
+- [Types of Autowiring](./2.3-autowiring.md#types-of-autowiring)
+  - [1. Constructor Injection (Recommended)](./2.3-autowiring.md#1-constructor-injection-recommended)
+  - [2. Setter / Method Injection](./2.3-autowiring.md#2-setter--method-injection)
+  - [3. Field Injection (Discouraged Anti-Pattern)](./2.3-autowiring.md#3-field-injection-discouraged-anti-pattern)
+- [How Spring Resolves Autowired Beans Under the Hood](./2.3-autowiring.md#how-spring-resolves-autowired-beans-under-the-hood)
+  - [`@Primary`](./2.3-autowiring.md#primary)
+  - [`@Qualifier`](./2.3-autowiring.md#qualifier)
+  - [`@Primary` vs `@Qualifier`](./2.3-autowiring.md#primary-vs-qualifier)
 - [4. Handling Optional Dependencies](./2.3-autowiring.md#4-handling-optional-dependencies)
   - [Approach 1: `@Autowired(required = false)`](./2.3-autowiring.md#approach-1-autowiredrequired--false)
   - [Approach 2: Java 8 `java.util.Optional<T>` (Recommended)](./2.3-autowiring.md#approach-2-java-8-javautiloptionalt-recommended)
