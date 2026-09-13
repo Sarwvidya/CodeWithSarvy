@@ -51,8 +51,9 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. @Controller vs @RestController](./3.2-rest-controllers-and-mapping.md#1-controller-vs-restcontroller)
-- [2. HTTP Method Mappings & REST Semantics](./3.2-rest-controllers-and-mapping.md#2-http-method-mappings--rest-semantics)
+- [@Controller vs @RestController](./3.2-rest-controllers-and-mapping.md#controller-vs-restcontroller)
+- [HTTP Method Mappings & REST Semantics](./3.2-rest-controllers-and-mapping.md#http-method-mappings--rest-semantics)
+- [Indempotency](./3.2-rest-controllers-and-mapping.md#indempotency)
 
 </div>
 

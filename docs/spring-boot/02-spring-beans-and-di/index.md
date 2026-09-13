@@ -137,10 +137,20 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Spring Bean Scopes Matrix](./2.4-bean-lifecycle-and-scopes.md#1-spring-bean-scopes-matrix)
-  - [Prototype Inside Singleton Pitfall:](./2.4-bean-lifecycle-and-scopes.md#prototype-inside-singleton-pitfall)
-- [2. Complete Bean Lifecycle Hook Sequence](./2.4-bean-lifecycle-and-scopes.md#2-complete-bean-lifecycle-hook-sequence)
-- [3. BeanPostProcessor Real-World Power](./2.4-bean-lifecycle-and-scopes.md#3-beanpostprocessor-real-world-power)
+- [What is Bean scope?](./2.4-bean-lifecycle-and-scopes.md#what-is-bean-scope)
+  - [1. Singleton Scope — Most Important](./2.4-bean-lifecycle-and-scopes.md#1-singleton-scope--most-important)
+  - [2. Prototype Scope](./2.4-bean-lifecycle-and-scopes.md#2-prototype-scope)
+  - [3. Request Scope](./2.4-bean-lifecycle-and-scopes.md#3-request-scope)
+  - [4. Session Scope](./2.4-bean-lifecycle-and-scopes.md#4-session-scope)
+  - [5. Application Scope](./2.4-bean-lifecycle-and-scopes.md#5-application-scope)
+  - [6. WebSocket Scope](./2.4-bean-lifecycle-and-scopes.md#6-websocket-scope)
+- [Spring Bean Scopes Matrix](./2.4-bean-lifecycle-and-scopes.md#spring-bean-scopes-matrix)
+  - [What happens when Prototype is injected into Singleton?](./2.4-bean-lifecycle-and-scopes.md#what-happens-when-prototype-is-injected-into-singleton)
+  - [Is Singleton Bean Thread-Safe?](./2.4-bean-lifecycle-and-scopes.md#is-singleton-bean-thread-safe)
+- [Complete Bean Lifecycle Hook Sequence](./2.4-bean-lifecycle-and-scopes.md#complete-bean-lifecycle-hook-sequence)
+  - [`@PostConstruct`](./2.4-bean-lifecycle-and-scopes.md#postconstruct)
+  - [`@PreDestroy`](./2.4-bean-lifecycle-and-scopes.md#predestroy)
+- [BeanPostProcessor Real-World Power](./2.4-bean-lifecycle-and-scopes.md#beanpostprocessor-real-world-power)
 
 </div>
 
