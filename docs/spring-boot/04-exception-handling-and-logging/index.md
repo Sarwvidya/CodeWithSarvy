@@ -29,6 +29,12 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
+- [What is Exception Handling?](./4.1-global-exception-handling.md#what-is-exception-handling)
+- [Types of Exceptions in Java](./4.1-global-exception-handling.md#types-of-exceptions-in-java)
+- [`try-catch`](./4.1-global-exception-handling.md#try-catch)
+- [`@ExceptionHandler`](./4.1-global-exception-handling.md#exceptionhandler)
+- [`@ControllerAdvice`](./4.1-global-exception-handling.md#controlleradvice)
+- [`@RestControllerAdvice`](./4.1-global-exception-handling.md#restcontrolleradvice)
 - [1. RFC 7807 ProblemDetail in Spring Boot 3](./4.1-global-exception-handling.md#1-rfc-7807-problemdetail-in-spring-boot-3)
 - [2. Implementing @RestControllerAdvice](./4.1-global-exception-handling.md#2-implementing-restcontrolleradvice)
 - [3. Security Considerations](./4.1-global-exception-handling.md#3-security-considerations)
@@ -51,10 +57,13 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Clean Domain Exception Hierarchy](./4.2-custom-domain-exceptions.md#1-clean-domain-exception-hierarchy)
-- [2. Designing the Base Exception Class](./4.2-custom-domain-exceptions.md#2-designing-the-base-exception-class)
+- [What is Custom Exception](./4.2-custom-domain-exceptions.md#what-is-custom-exception)
+- [Why Create Custom Exceptions?](./4.2-custom-domain-exceptions.md#why-create-custom-exceptions)
+- [Clean Domain Exception Hierarchy](./4.2-custom-domain-exceptions.md#clean-domain-exception-hierarchy)
+- [Common HTTP Status Codes](./4.2-custom-domain-exceptions.md#common-http-status-codes)
+- [Designing the Base Exception Class](./4.2-custom-domain-exceptions.md#designing-the-base-exception-class)
   - [Specialized Concrete Exceptions](./4.2-custom-domain-exceptions.md#specialized-concrete-exceptions)
-- [3. Best Practices & Anti-Patterns](./4.2-custom-domain-exceptions.md#3-best-practices--anti-patterns)
+- [Best Practices & Anti-Patterns](./4.2-custom-domain-exceptions.md#best-practices--anti-patterns)
 
 </div>
 
@@ -74,6 +83,8 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
+- [Logging](./4.3-logging-architecture-and-slf4j.md#logging)
+- [Logging Levels](./4.3-logging-architecture-and-slf4j.md#logging-levels)
 - [1. Logging Levels & Thresholds](./4.3-logging-architecture-and-slf4j.md#1-logging-levels--thresholds)
   - [Configuring Levels in `application.yml`:](./4.3-logging-architecture-and-slf4j.md#configuring-levels-in-applicationyml)
 - [2. Structured Logging with MDC (Mapped Diagnostic Context)](./4.3-logging-architecture-and-slf4j.md#2-structured-logging-with-mdc-mapped-diagnostic-context)

@@ -29,9 +29,11 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. End-to-End Request Processing Flow](./3.1-spring-mvc-architecture.md#1-end-to-end-request-processing-flow)
-- [2. Core Architectural Components](./3.1-spring-mvc-architecture.md#2-core-architectural-components)
-- [3. Filters vs HandlerInterceptors](./3.1-spring-mvc-architecture.md#3-filters-vs-handlerinterceptors)
+- [End-to-End Request Processing Flow](./3.1-spring-mvc-architecture.md#end-to-end-request-processing-flow)
+- [Core Architectural Components](./3.1-spring-mvc-architecture.md#core-architectural-components)
+- [Filters vs HandlerInterceptors](./3.1-spring-mvc-architecture.md#filters-vs-handlerinterceptors)
+- [What is Statelessness in REST?](./3.1-spring-mvc-architecture.md#what-is-statelessness-in-rest)
+- [Rest vs Soap](./3.1-spring-mvc-architecture.md#rest-vs-soap)
 
 </div>
 
@@ -117,9 +119,14 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
-- [1. Core Validation Annotations](./3.5-request-validation.md#1-core-validation-annotations)
-- [2. Triggering Validation in the Controller](./3.5-request-validation.md#2-triggering-validation-in-the-controller)
-- [3. Custom Constraint Validator](./3.5-request-validation.md#3-custom-constraint-validator)
+- [Bean Validation](./3.5-request-validation.md#bean-validation)
+  - [`@NotNull` vs `@NotBlank` vs `@NotEmpty`](./3.5-request-validation.md#notnull-vs-notblank-vs-notempty)
+- [Core Validation Annotations](./3.5-request-validation.md#core-validation-annotations)
+- [What is `@Valid`](./3.5-request-validation.md#what-is-valid)
+- [What is `@Validated`](./3.5-request-validation.md#what-is-validated)
+  - [`@Valid` vs `@Validated`](./3.5-request-validation.md#valid-vs-validated)
+- [Triggering Validation in the Controller](./3.5-request-validation.md#triggering-validation-in-the-controller)
+- [Custom Constraint Validator](./3.5-request-validation.md#custom-constraint-validator)
   - [1. Define the Annotation](./3.5-request-validation.md#1-define-the-annotation)
   - [2. Implement the ConstraintValidator](./3.5-request-validation.md#2-implement-the-constraintvalidator)
 
