@@ -89,6 +89,8 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
   - [Configuring Levels in `application.yml`:](./4.3-logging-architecture-and-slf4j.md#configuring-levels-in-applicationyml)
 - [2. Structured Logging with MDC (Mapped Diagnostic Context)](./4.3-logging-architecture-and-slf4j.md#2-structured-logging-with-mdc-mapped-diagnostic-context)
 - [3. Logback Configuration (`logback-spring.xml`)](./4.3-logging-architecture-and-slf4j.md#3-logback-configuration-logback-springxml)
+- [SLF4J](./4.3-logging-architecture-and-slf4j.md#slf4j)
+- [Why Use SLF4J?](./4.3-logging-architecture-and-slf4j.md#why-use-slf4j)
 
 </div>
 
@@ -108,6 +110,7 @@ Click anywhere on a topic card below to open that subtopic note, or use the Obsi
 
 <div class="card-toc">
 
+- [What is Spring Boot Actuator?](./4.4-spring-boot-actuator.md#what-is-spring-boot-actuator)
 - [1. Key Actuator Endpoints](./4.4-spring-boot-actuator.md#1-key-actuator-endpoints)
 - [2. Exposing & Securing Actuator in `application.yml`](./4.4-spring-boot-actuator.md#2-exposing--securing-actuator-in-applicationyml)
 - [3. Custom Health Indicators](./4.4-spring-boot-actuator.md#3-custom-health-indicators)
